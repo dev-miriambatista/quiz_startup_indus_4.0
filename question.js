@@ -1,2752 +1,1652 @@
 const questions = [
-  {
-    "id": 1,
-    "pergunta": "Pergunta exemplo 1: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 1",
-      "B": "Alternativa B da questão 1",
-      "C": "Alternativa C da questão 1",
-      "D": "Alternativa D da questão 1"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 2,
-    "pergunta": "Pergunta exemplo 2: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 2",
-      "B": "Alternativa B da questão 2",
-      "C": "Alternativa C da questão 2",
-      "D": "Alternativa D da questão 2"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 3,
-    "pergunta": "Pergunta exemplo 3: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 3",
-      "B": "Alternativa B da questão 3",
-      "C": "Alternativa C da questão 3",
-      "D": "Alternativa D da questão 3"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 4,
-    "pergunta": "Pergunta exemplo 4: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 4",
-      "B": "Alternativa B da questão 4",
-      "C": "Alternativa C da questão 4",
-      "D": "Alternativa D da questão 4"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 5,
-    "pergunta": "Pergunta exemplo 5: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 5",
-      "B": "Alternativa B da questão 5",
-      "C": "Alternativa C da questão 5",
-      "D": "Alternativa D da questão 5"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 6,
-    "pergunta": "Pergunta exemplo 6: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 6",
-      "B": "Alternativa B da questão 6",
-      "C": "Alternativa C da questão 6",
-      "D": "Alternativa D da questão 6"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 7,
-    "pergunta": "Pergunta exemplo 7: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 7",
-      "B": "Alternativa B da questão 7",
-      "C": "Alternativa C da questão 7",
-      "D": "Alternativa D da questão 7"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 8,
-    "pergunta": "Pergunta exemplo 8: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 8",
-      "B": "Alternativa B da questão 8",
-      "C": "Alternativa C da questão 8",
-      "D": "Alternativa D da questão 8"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 9,
-    "pergunta": "Pergunta exemplo 9: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 9",
-      "B": "Alternativa B da questão 9",
-      "C": "Alternativa C da questão 9",
-      "D": "Alternativa D da questão 9"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 10,
-    "pergunta": "Pergunta exemplo 10: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 10",
-      "B": "Alternativa B da questão 10",
-      "C": "Alternativa C da questão 10",
-      "D": "Alternativa D da questão 10"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 11,
-    "pergunta": "Pergunta exemplo 11: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 11",
-      "B": "Alternativa B da questão 11",
-      "C": "Alternativa C da questão 11",
-      "D": "Alternativa D da questão 11"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 12,
-    "pergunta": "Pergunta exemplo 12: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 12",
-      "B": "Alternativa B da questão 12",
-      "C": "Alternativa C da questão 12",
-      "D": "Alternativa D da questão 12"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 13,
-    "pergunta": "Pergunta exemplo 13: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 13",
-      "B": "Alternativa B da questão 13",
-      "C": "Alternativa C da questão 13",
-      "D": "Alternativa D da questão 13"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 14,
-    "pergunta": "Pergunta exemplo 14: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 14",
-      "B": "Alternativa B da questão 14",
-      "C": "Alternativa C da questão 14",
-      "D": "Alternativa D da questão 14"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 15,
-    "pergunta": "Pergunta exemplo 15: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 15",
-      "B": "Alternativa B da questão 15",
-      "C": "Alternativa C da questão 15",
-      "D": "Alternativa D da questão 15"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 16,
-    "pergunta": "Pergunta exemplo 16: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 16",
-      "B": "Alternativa B da questão 16",
-      "C": "Alternativa C da questão 16",
-      "D": "Alternativa D da questão 16"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 17,
-    "pergunta": "Pergunta exemplo 17: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 17",
-      "B": "Alternativa B da questão 17",
-      "C": "Alternativa C da questão 17",
-      "D": "Alternativa D da questão 17"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 18,
-    "pergunta": "Pergunta exemplo 18: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 18",
-      "B": "Alternativa B da questão 18",
-      "C": "Alternativa C da questão 18",
-      "D": "Alternativa D da questão 18"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 19,
-    "pergunta": "Pergunta exemplo 19: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 19",
-      "B": "Alternativa B da questão 19",
-      "C": "Alternativa C da questão 19",
-      "D": "Alternativa D da questão 19"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 20,
-    "pergunta": "Pergunta exemplo 20: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 20",
-      "B": "Alternativa B da questão 20",
-      "C": "Alternativa C da questão 20",
-      "D": "Alternativa D da questão 20"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 21,
-    "pergunta": "Pergunta exemplo 21: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 21",
-      "B": "Alternativa B da questão 21",
-      "C": "Alternativa C da questão 21",
-      "D": "Alternativa D da questão 21"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 22,
-    "pergunta": "Pergunta exemplo 22: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 22",
-      "B": "Alternativa B da questão 22",
-      "C": "Alternativa C da questão 22",
-      "D": "Alternativa D da questão 22"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 23,
-    "pergunta": "Pergunta exemplo 23: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 23",
-      "B": "Alternativa B da questão 23",
-      "C": "Alternativa C da questão 23",
-      "D": "Alternativa D da questão 23"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 24,
-    "pergunta": "Pergunta exemplo 24: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 24",
-      "B": "Alternativa B da questão 24",
-      "C": "Alternativa C da questão 24",
-      "D": "Alternativa D da questão 24"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 25,
-    "pergunta": "Pergunta exemplo 25: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 25",
-      "B": "Alternativa B da questão 25",
-      "C": "Alternativa C da questão 25",
-      "D": "Alternativa D da questão 25"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 26,
-    "pergunta": "Pergunta exemplo 26: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 26",
-      "B": "Alternativa B da questão 26",
-      "C": "Alternativa C da questão 26",
-      "D": "Alternativa D da questão 26"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 27,
-    "pergunta": "Pergunta exemplo 27: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 27",
-      "B": "Alternativa B da questão 27",
-      "C": "Alternativa C da questão 27",
-      "D": "Alternativa D da questão 27"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 28,
-    "pergunta": "Pergunta exemplo 28: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 28",
-      "B": "Alternativa B da questão 28",
-      "C": "Alternativa C da questão 28",
-      "D": "Alternativa D da questão 28"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 29,
-    "pergunta": "Pergunta exemplo 29: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 29",
-      "B": "Alternativa B da questão 29",
-      "C": "Alternativa C da questão 29",
-      "D": "Alternativa D da questão 29"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 30,
-    "pergunta": "Pergunta exemplo 30: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 30",
-      "B": "Alternativa B da questão 30",
-      "C": "Alternativa C da questão 30",
-      "D": "Alternativa D da questão 30"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 31,
-    "pergunta": "Pergunta exemplo 31: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 31",
-      "B": "Alternativa B da questão 31",
-      "C": "Alternativa C da questão 31",
-      "D": "Alternativa D da questão 31"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 32,
-    "pergunta": "Pergunta exemplo 32: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 32",
-      "B": "Alternativa B da questão 32",
-      "C": "Alternativa C da questão 32",
-      "D": "Alternativa D da questão 32"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 33,
-    "pergunta": "Pergunta exemplo 33: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 33",
-      "B": "Alternativa B da questão 33",
-      "C": "Alternativa C da questão 33",
-      "D": "Alternativa D da questão 33"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 34,
-    "pergunta": "Pergunta exemplo 34: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 34",
-      "B": "Alternativa B da questão 34",
-      "C": "Alternativa C da questão 34",
-      "D": "Alternativa D da questão 34"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 35,
-    "pergunta": "Pergunta exemplo 35: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 35",
-      "B": "Alternativa B da questão 35",
-      "C": "Alternativa C da questão 35",
-      "D": "Alternativa D da questão 35"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 36,
-    "pergunta": "Pergunta exemplo 36: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 36",
-      "B": "Alternativa B da questão 36",
-      "C": "Alternativa C da questão 36",
-      "D": "Alternativa D da questão 36"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 37,
-    "pergunta": "Pergunta exemplo 37: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 37",
-      "B": "Alternativa B da questão 37",
-      "C": "Alternativa C da questão 37",
-      "D": "Alternativa D da questão 37"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 38,
-    "pergunta": "Pergunta exemplo 38: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 38",
-      "B": "Alternativa B da questão 38",
-      "C": "Alternativa C da questão 38",
-      "D": "Alternativa D da questão 38"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 39,
-    "pergunta": "Pergunta exemplo 39: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 39",
-      "B": "Alternativa B da questão 39",
-      "C": "Alternativa C da questão 39",
-      "D": "Alternativa D da questão 39"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 40,
-    "pergunta": "Pergunta exemplo 40: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 40",
-      "B": "Alternativa B da questão 40",
-      "C": "Alternativa C da questão 40",
-      "D": "Alternativa D da questão 40"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 41,
-    "pergunta": "Pergunta exemplo 41: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 41",
-      "B": "Alternativa B da questão 41",
-      "C": "Alternativa C da questão 41",
-      "D": "Alternativa D da questão 41"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 42,
-    "pergunta": "Pergunta exemplo 42: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 42",
-      "B": "Alternativa B da questão 42",
-      "C": "Alternativa C da questão 42",
-      "D": "Alternativa D da questão 42"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 43,
-    "pergunta": "Pergunta exemplo 43: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 43",
-      "B": "Alternativa B da questão 43",
-      "C": "Alternativa C da questão 43",
-      "D": "Alternativa D da questão 43"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 44,
-    "pergunta": "Pergunta exemplo 44: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 44",
-      "B": "Alternativa B da questão 44",
-      "C": "Alternativa C da questão 44",
-      "D": "Alternativa D da questão 44"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 45,
-    "pergunta": "Pergunta exemplo 45: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 45",
-      "B": "Alternativa B da questão 45",
-      "C": "Alternativa C da questão 45",
-      "D": "Alternativa D da questão 45"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 46,
-    "pergunta": "Pergunta exemplo 46: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 46",
-      "B": "Alternativa B da questão 46",
-      "C": "Alternativa C da questão 46",
-      "D": "Alternativa D da questão 46"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 47,
-    "pergunta": "Pergunta exemplo 47: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 47",
-      "B": "Alternativa B da questão 47",
-      "C": "Alternativa C da questão 47",
-      "D": "Alternativa D da questão 47"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 48,
-    "pergunta": "Pergunta exemplo 48: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 48",
-      "B": "Alternativa B da questão 48",
-      "C": "Alternativa C da questão 48",
-      "D": "Alternativa D da questão 48"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 49,
-    "pergunta": "Pergunta exemplo 49: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 49",
-      "B": "Alternativa B da questão 49",
-      "C": "Alternativa C da questão 49",
-      "D": "Alternativa D da questão 49"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 50,
-    "pergunta": "Pergunta exemplo 50: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 50",
-      "B": "Alternativa B da questão 50",
-      "C": "Alternativa C da questão 50",
-      "D": "Alternativa D da questão 50"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 51,
-    "pergunta": "Pergunta exemplo 51: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 51",
-      "B": "Alternativa B da questão 51",
-      "C": "Alternativa C da questão 51",
-      "D": "Alternativa D da questão 51"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 52,
-    "pergunta": "Pergunta exemplo 52: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 52",
-      "B": "Alternativa B da questão 52",
-      "C": "Alternativa C da questão 52",
-      "D": "Alternativa D da questão 52"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 53,
-    "pergunta": "Pergunta exemplo 53: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 53",
-      "B": "Alternativa B da questão 53",
-      "C": "Alternativa C da questão 53",
-      "D": "Alternativa D da questão 53"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 54,
-    "pergunta": "Pergunta exemplo 54: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 54",
-      "B": "Alternativa B da questão 54",
-      "C": "Alternativa C da questão 54",
-      "D": "Alternativa D da questão 54"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 55,
-    "pergunta": "Pergunta exemplo 55: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 55",
-      "B": "Alternativa B da questão 55",
-      "C": "Alternativa C da questão 55",
-      "D": "Alternativa D da questão 55"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 56,
-    "pergunta": "Pergunta exemplo 56: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 56",
-      "B": "Alternativa B da questão 56",
-      "C": "Alternativa C da questão 56",
-      "D": "Alternativa D da questão 56"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 57,
-    "pergunta": "Pergunta exemplo 57: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 57",
-      "B": "Alternativa B da questão 57",
-      "C": "Alternativa C da questão 57",
-      "D": "Alternativa D da questão 57"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 58,
-    "pergunta": "Pergunta exemplo 58: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 58",
-      "B": "Alternativa B da questão 58",
-      "C": "Alternativa C da questão 58",
-      "D": "Alternativa D da questão 58"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 59,
-    "pergunta": "Pergunta exemplo 59: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 59",
-      "B": "Alternativa B da questão 59",
-      "C": "Alternativa C da questão 59",
-      "D": "Alternativa D da questão 59"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 60,
-    "pergunta": "Pergunta exemplo 60: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 60",
-      "B": "Alternativa B da questão 60",
-      "C": "Alternativa C da questão 60",
-      "D": "Alternativa D da questão 60"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 61,
-    "pergunta": "Pergunta exemplo 61: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 61",
-      "B": "Alternativa B da questão 61",
-      "C": "Alternativa C da questão 61",
-      "D": "Alternativa D da questão 61"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 62,
-    "pergunta": "Pergunta exemplo 62: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 62",
-      "B": "Alternativa B da questão 62",
-      "C": "Alternativa C da questão 62",
-      "D": "Alternativa D da questão 62"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 63,
-    "pergunta": "Pergunta exemplo 63: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 63",
-      "B": "Alternativa B da questão 63",
-      "C": "Alternativa C da questão 63",
-      "D": "Alternativa D da questão 63"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 64,
-    "pergunta": "Pergunta exemplo 64: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 64",
-      "B": "Alternativa B da questão 64",
-      "C": "Alternativa C da questão 64",
-      "D": "Alternativa D da questão 64"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 65,
-    "pergunta": "Pergunta exemplo 65: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 65",
-      "B": "Alternativa B da questão 65",
-      "C": "Alternativa C da questão 65",
-      "D": "Alternativa D da questão 65"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 66,
-    "pergunta": "Pergunta exemplo 66: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 66",
-      "B": "Alternativa B da questão 66",
-      "C": "Alternativa C da questão 66",
-      "D": "Alternativa D da questão 66"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 67,
-    "pergunta": "Pergunta exemplo 67: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 67",
-      "B": "Alternativa B da questão 67",
-      "C": "Alternativa C da questão 67",
-      "D": "Alternativa D da questão 67"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 68,
-    "pergunta": "Pergunta exemplo 68: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 68",
-      "B": "Alternativa B da questão 68",
-      "C": "Alternativa C da questão 68",
-      "D": "Alternativa D da questão 68"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 69,
-    "pergunta": "Pergunta exemplo 69: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 69",
-      "B": "Alternativa B da questão 69",
-      "C": "Alternativa C da questão 69",
-      "D": "Alternativa D da questão 69"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 70,
-    "pergunta": "Pergunta exemplo 70: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 70",
-      "B": "Alternativa B da questão 70",
-      "C": "Alternativa C da questão 70",
-      "D": "Alternativa D da questão 70"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 71,
-    "pergunta": "Pergunta exemplo 71: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 71",
-      "B": "Alternativa B da questão 71",
-      "C": "Alternativa C da questão 71",
-      "D": "Alternativa D da questão 71"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 72,
-    "pergunta": "Pergunta exemplo 72: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 72",
-      "B": "Alternativa B da questão 72",
-      "C": "Alternativa C da questão 72",
-      "D": "Alternativa D da questão 72"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 73,
-    "pergunta": "Pergunta exemplo 73: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 73",
-      "B": "Alternativa B da questão 73",
-      "C": "Alternativa C da questão 73",
-      "D": "Alternativa D da questão 73"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 74,
-    "pergunta": "Pergunta exemplo 74: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 74",
-      "B": "Alternativa B da questão 74",
-      "C": "Alternativa C da questão 74",
-      "D": "Alternativa D da questão 74"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 75,
-    "pergunta": "Pergunta exemplo 75: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 75",
-      "B": "Alternativa B da questão 75",
-      "C": "Alternativa C da questão 75",
-      "D": "Alternativa D da questão 75"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 76,
-    "pergunta": "Pergunta exemplo 76: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 76",
-      "B": "Alternativa B da questão 76",
-      "C": "Alternativa C da questão 76",
-      "D": "Alternativa D da questão 76"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 77,
-    "pergunta": "Pergunta exemplo 77: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 77",
-      "B": "Alternativa B da questão 77",
-      "C": "Alternativa C da questão 77",
-      "D": "Alternativa D da questão 77"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 78,
-    "pergunta": "Pergunta exemplo 78: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 78",
-      "B": "Alternativa B da questão 78",
-      "C": "Alternativa C da questão 78",
-      "D": "Alternativa D da questão 78"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 79,
-    "pergunta": "Pergunta exemplo 79: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 79",
-      "B": "Alternativa B da questão 79",
-      "C": "Alternativa C da questão 79",
-      "D": "Alternativa D da questão 79"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 80,
-    "pergunta": "Pergunta exemplo 80: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 80",
-      "B": "Alternativa B da questão 80",
-      "C": "Alternativa C da questão 80",
-      "D": "Alternativa D da questão 80"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 81,
-    "pergunta": "Pergunta exemplo 81: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 81",
-      "B": "Alternativa B da questão 81",
-      "C": "Alternativa C da questão 81",
-      "D": "Alternativa D da questão 81"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 82,
-    "pergunta": "Pergunta exemplo 82: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 82",
-      "B": "Alternativa B da questão 82",
-      "C": "Alternativa C da questão 82",
-      "D": "Alternativa D da questão 82"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 83,
-    "pergunta": "Pergunta exemplo 83: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 83",
-      "B": "Alternativa B da questão 83",
-      "C": "Alternativa C da questão 83",
-      "D": "Alternativa D da questão 83"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 84,
-    "pergunta": "Pergunta exemplo 84: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 84",
-      "B": "Alternativa B da questão 84",
-      "C": "Alternativa C da questão 84",
-      "D": "Alternativa D da questão 84"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 85,
-    "pergunta": "Pergunta exemplo 85: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 85",
-      "B": "Alternativa B da questão 85",
-      "C": "Alternativa C da questão 85",
-      "D": "Alternativa D da questão 85"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 86,
-    "pergunta": "Pergunta exemplo 86: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 86",
-      "B": "Alternativa B da questão 86",
-      "C": "Alternativa C da questão 86",
-      "D": "Alternativa D da questão 86"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 87,
-    "pergunta": "Pergunta exemplo 87: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 87",
-      "B": "Alternativa B da questão 87",
-      "C": "Alternativa C da questão 87",
-      "D": "Alternativa D da questão 87"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 88,
-    "pergunta": "Pergunta exemplo 88: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 88",
-      "B": "Alternativa B da questão 88",
-      "C": "Alternativa C da questão 88",
-      "D": "Alternativa D da questão 88"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 89,
-    "pergunta": "Pergunta exemplo 89: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 89",
-      "B": "Alternativa B da questão 89",
-      "C": "Alternativa C da questão 89",
-      "D": "Alternativa D da questão 89"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 90,
-    "pergunta": "Pergunta exemplo 90: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 90",
-      "B": "Alternativa B da questão 90",
-      "C": "Alternativa C da questão 90",
-      "D": "Alternativa D da questão 90"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 91,
-    "pergunta": "Pergunta exemplo 91: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 91",
-      "B": "Alternativa B da questão 91",
-      "C": "Alternativa C da questão 91",
-      "D": "Alternativa D da questão 91"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 92,
-    "pergunta": "Pergunta exemplo 92: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 92",
-      "B": "Alternativa B da questão 92",
-      "C": "Alternativa C da questão 92",
-      "D": "Alternativa D da questão 92"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 93,
-    "pergunta": "Pergunta exemplo 93: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 93",
-      "B": "Alternativa B da questão 93",
-      "C": "Alternativa C da questão 93",
-      "D": "Alternativa D da questão 93"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 94,
-    "pergunta": "Pergunta exemplo 94: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 94",
-      "B": "Alternativa B da questão 94",
-      "C": "Alternativa C da questão 94",
-      "D": "Alternativa D da questão 94"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 95,
-    "pergunta": "Pergunta exemplo 95: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 95",
-      "B": "Alternativa B da questão 95",
-      "C": "Alternativa C da questão 95",
-      "D": "Alternativa D da questão 95"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 96,
-    "pergunta": "Pergunta exemplo 96: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 96",
-      "B": "Alternativa B da questão 96",
-      "C": "Alternativa C da questão 96",
-      "D": "Alternativa D da questão 96"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 97,
-    "pergunta": "Pergunta exemplo 97: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 97",
-      "B": "Alternativa B da questão 97",
-      "C": "Alternativa C da questão 97",
-      "D": "Alternativa D da questão 97"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 98,
-    "pergunta": "Pergunta exemplo 98: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 98",
-      "B": "Alternativa B da questão 98",
-      "C": "Alternativa C da questão 98",
-      "D": "Alternativa D da questão 98"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 99,
-    "pergunta": "Pergunta exemplo 99: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 99",
-      "B": "Alternativa B da questão 99",
-      "C": "Alternativa C da questão 99",
-      "D": "Alternativa D da questão 99"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 100,
-    "pergunta": "Pergunta exemplo 100: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 100",
-      "B": "Alternativa B da questão 100",
-      "C": "Alternativa C da questão 100",
-      "D": "Alternativa D da questão 100"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 101,
-    "pergunta": "Pergunta exemplo 101: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 101",
-      "B": "Alternativa B da questão 101",
-      "C": "Alternativa C da questão 101",
-      "D": "Alternativa D da questão 101"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 102,
-    "pergunta": "Pergunta exemplo 102: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 102",
-      "B": "Alternativa B da questão 102",
-      "C": "Alternativa C da questão 102",
-      "D": "Alternativa D da questão 102"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 103,
-    "pergunta": "Pergunta exemplo 103: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 103",
-      "B": "Alternativa B da questão 103",
-      "C": "Alternativa C da questão 103",
-      "D": "Alternativa D da questão 103"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 104,
-    "pergunta": "Pergunta exemplo 104: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 104",
-      "B": "Alternativa B da questão 104",
-      "C": "Alternativa C da questão 104",
-      "D": "Alternativa D da questão 104"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 105,
-    "pergunta": "Pergunta exemplo 105: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 105",
-      "B": "Alternativa B da questão 105",
-      "C": "Alternativa C da questão 105",
-      "D": "Alternativa D da questão 105"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 106,
-    "pergunta": "Pergunta exemplo 106: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 106",
-      "B": "Alternativa B da questão 106",
-      "C": "Alternativa C da questão 106",
-      "D": "Alternativa D da questão 106"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 107,
-    "pergunta": "Pergunta exemplo 107: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 107",
-      "B": "Alternativa B da questão 107",
-      "C": "Alternativa C da questão 107",
-      "D": "Alternativa D da questão 107"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 108,
-    "pergunta": "Pergunta exemplo 108: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 108",
-      "B": "Alternativa B da questão 108",
-      "C": "Alternativa C da questão 108",
-      "D": "Alternativa D da questão 108"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 109,
-    "pergunta": "Pergunta exemplo 109: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 109",
-      "B": "Alternativa B da questão 109",
-      "C": "Alternativa C da questão 109",
-      "D": "Alternativa D da questão 109"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 110,
-    "pergunta": "Pergunta exemplo 110: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 110",
-      "B": "Alternativa B da questão 110",
-      "C": "Alternativa C da questão 110",
-      "D": "Alternativa D da questão 110"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 111,
-    "pergunta": "Pergunta exemplo 111: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 111",
-      "B": "Alternativa B da questão 111",
-      "C": "Alternativa C da questão 111",
-      "D": "Alternativa D da questão 111"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 112,
-    "pergunta": "Pergunta exemplo 112: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 112",
-      "B": "Alternativa B da questão 112",
-      "C": "Alternativa C da questão 112",
-      "D": "Alternativa D da questão 112"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 113,
-    "pergunta": "Pergunta exemplo 113: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 113",
-      "B": "Alternativa B da questão 113",
-      "C": "Alternativa C da questão 113",
-      "D": "Alternativa D da questão 113"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 114,
-    "pergunta": "Pergunta exemplo 114: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 114",
-      "B": "Alternativa B da questão 114",
-      "C": "Alternativa C da questão 114",
-      "D": "Alternativa D da questão 114"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 115,
-    "pergunta": "Pergunta exemplo 115: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 115",
-      "B": "Alternativa B da questão 115",
-      "C": "Alternativa C da questão 115",
-      "D": "Alternativa D da questão 115"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 116,
-    "pergunta": "Pergunta exemplo 116: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 116",
-      "B": "Alternativa B da questão 116",
-      "C": "Alternativa C da questão 116",
-      "D": "Alternativa D da questão 116"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 117,
-    "pergunta": "Pergunta exemplo 117: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 117",
-      "B": "Alternativa B da questão 117",
-      "C": "Alternativa C da questão 117",
-      "D": "Alternativa D da questão 117"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 118,
-    "pergunta": "Pergunta exemplo 118: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 118",
-      "B": "Alternativa B da questão 118",
-      "C": "Alternativa C da questão 118",
-      "D": "Alternativa D da questão 118"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 119,
-    "pergunta": "Pergunta exemplo 119: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 119",
-      "B": "Alternativa B da questão 119",
-      "C": "Alternativa C da questão 119",
-      "D": "Alternativa D da questão 119"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 120,
-    "pergunta": "Pergunta exemplo 120: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 120",
-      "B": "Alternativa B da questão 120",
-      "C": "Alternativa C da questão 120",
-      "D": "Alternativa D da questão 120"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 121,
-    "pergunta": "Pergunta exemplo 121: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 121",
-      "B": "Alternativa B da questão 121",
-      "C": "Alternativa C da questão 121",
-      "D": "Alternativa D da questão 121"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 122,
-    "pergunta": "Pergunta exemplo 122: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 122",
-      "B": "Alternativa B da questão 122",
-      "C": "Alternativa C da questão 122",
-      "D": "Alternativa D da questão 122"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 123,
-    "pergunta": "Pergunta exemplo 123: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 123",
-      "B": "Alternativa B da questão 123",
-      "C": "Alternativa C da questão 123",
-      "D": "Alternativa D da questão 123"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 124,
-    "pergunta": "Pergunta exemplo 124: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 124",
-      "B": "Alternativa B da questão 124",
-      "C": "Alternativa C da questão 124",
-      "D": "Alternativa D da questão 124"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 125,
-    "pergunta": "Pergunta exemplo 125: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 125",
-      "B": "Alternativa B da questão 125",
-      "C": "Alternativa C da questão 125",
-      "D": "Alternativa D da questão 125"
-    },
-    "resposta_correta": "D"
-  },
+    {
+      "id": 1,
+      "pergunta": "O que é o Lean Canvas?",
+      "alternativas": {
+        "A": "Um modelo tradicional de gestão financeira.",
+        "B": "Um método para automatizar processos industriais.",
+        "C": "Uma ferramenta enxuta para planejar negócios em validação.",
+        "D": "Um tipo de software ERP."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 2,
+      "pergunta": "Qual é o objetivo do Produto Mínimo Viável (MVP)?",
+      "alternativas": {
+        "A": "Aumentar o preço de mercado rapidamente.",
+        "B": "Evitar concorrência por meio de patentes.",
+        "C": "Validar ideias com o menor custo e tempo possível.",
+        "D": "Testar o produto final antes do lançamento oficial."
+      },
+      "resposta_correta": "D"
+    },
+    {
+      "id": 3,
+      "pergunta": "Qual das alternativas representa uma das 5 Forças de Porter?",
+      "alternativas": {
+        "A": "Proposta de Valor.",
+        "B": "Fontes de Receita.",
+        "C": "Poder de negociação dos fornecedores.",
+        "D": "Canvas de Inovação."
+      },
+      "resposta_correta": "A"
+    },
+    {
+      "id": 4,
+      "pergunta": "O que representa a 'Proposta de Valor' em um modelo de negócio?",
+      "alternativas": {
+        "A": "Um slogan publicitário criativo.",
+        "B": "O preço final do produto.",
+        "C": "O diferencial que torna o produto valioso para o cliente.",
+        "D": "O plano de marketing da empresa."
+      },
+      "resposta_correta": "C"
+    },
+    {
+      "id": 5,
+      "pergunta": "Segundo Christensen, o que caracteriza a inovação disruptiva?",
+      "alternativas": {
+        "A": "É cara e exclusiva.",
+        "B": "Melhora produtos premium.",
+        "C": "É simples, acessível e começa inferior.",
+        "D": "É usada apenas em setores tradicionais."
+      },
+      "resposta_correta": "D"
+    },
+    {
+      "id": 6,
+      "pergunta": "Qual é a principal função de um Pitch de negócios?",
+      "alternativas": {
+        "A": "Apresentar a estrutura de custos da empresa.",
+        "B": "Fazer uma análise contábil do projeto.",
+        "C": "Convencer investidores ou parceiros sobre a ideia.",
+        "D": "Mostrar estatísticas de vendas passadas."
+      },
+      "resposta_correta": "A"
+    },
+    {
+      "id": 7,
+      "pergunta": "O que são os 'Canais' no Lean Canvas?",
+      "alternativas": {
+        "A": "Os departamentos da empresa.",
+        "B": "Os setores da indústria.",
+        "C": "Os meios pelos quais o produto chega ao cliente.",
+        "D": "As redes de investidores."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 8,
+      "pergunta": "Qual o papel da 'Vantagem Injusta' no Lean Canvas?",
+      "alternativas": {
+        "A": "Indicar um monopólio legal.",
+        "B": "Mostrar a receita bruta mensal.",
+        "C": "Apontar algo que não pode ser copiado ou comprado.",
+        "D": "Registrar marcas e patentes."
+      },
+      "resposta_correta": "D"
+    },
+    {
+      "id": 9,
+      "pergunta": "O que representa a 'Estrutura de Custos' no Business Model Canvas?",
+      "alternativas": {
+        "A": "Lista de fornecedores confiáveis.",
+        "B": "Planilha de folha de pagamento.",
+        "C": "Todos os gastos fixos e variáveis do negócio.",
+        "D": "Custo de aquisição de clientes."
+      },
+      "resposta_correta": "A"
+    },
+    {
+      "id": 10,
+      "pergunta": "O que é um 'Segmento de Clientes' no Canvas?",
+      "alternativas": {
+        "A": "A parcela de mercado dominada pelos concorrentes.",
+        "B": "O público-alvo que se pretende atingir.",
+        "C": "O conjunto de sócios e acionistas da empresa.",
+        "D": "O grupo de colaboradores do projeto."
+      },
+      "resposta_correta": "C"
+    },
+    {
+      "id": 11,
+      "pergunta": "Qual das alternativas representa um diferencial competitivo?",
+      "alternativas": {
+        "A": "Produto similar ao da concorrência.",
+        "B": "Campanhas com baixo alcance.",
+        "C": "Atendimento exclusivo e ágil.",
+        "D": "Preço igual ao mercado."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 12,
+      "pergunta": "Qual a função principal da análise SWOT?",
+      "alternativas": {
+        "A": "Definir o preço do produto.",
+        "B": "Analisar os concorrentes diretos.",
+        "C": "Identificar forças, fraquezas, oportunidades e ameaças.",
+        "D": "Criar um logotipo para a marca."
+      },
+      "resposta_correta": "D"
+    },
+    {
+      "id": 13,
+      "pergunta": "O que diferencia o Business Model Canvas do Lean Canvas?",
+      "alternativas": {
+        "A": "O Lean Canvas foca em empresas consolidadas.",
+        "B": "O Business Canvas exclui segmentos de clientes.",
+        "C": "O Lean Canvas prioriza riscos e hipóteses em startups.",
+        "D": "O Canvas tradicional é exclusivo para indústrias."
+      },
+      "resposta_correta": "A"
+    },
+    {
+      "id": 14,
+      "pergunta": "Para que serve um Design Sprint?",
+      "alternativas": {
+        "A": "Estimar o orçamento anual da empresa.",
+        "B": "Criar logomarcas e identidade visual.",
+        "C": "Resolver problemas complexos de forma rápida.",
+        "D": "Realizar auditorias fiscais."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 15,
+      "pergunta": "O que é um Mockup?",
+      "alternativas": {
+        "A": "Protótipo funcional interativo.",
+        "B": "Representação visual próxima do produto final.",
+        "C": "Documento de análise de mercado.",
+        "D": "Cópia de segurança de dados."
+      },
+      "resposta_correta": "D"
+    },
+    {
+      "id": 16,
+      "pergunta": "Qual das alternativas descreve um 'problema' no Lean Canvas?",
+      "alternativas": {
+        "A": "O preço do produto.",
+        "B": "As métricas de sucesso.",
+        "C": "As principais dores que o cliente enfrenta.",
+        "D": "O modelo de receita."
+      },
+      "resposta_correta": "A"
+    },
+    {
+      "id": 17,
+      "pergunta": "Por que validar uma ideia com MVP é importante?",
+      "alternativas": {
+        "A": "Para conseguir um CNPJ mais rápido.",
+        "B": "Para evitar o uso de tecnologia cara.",
+        "C": "Para aprender com o cliente e ajustar a solução.",
+        "D": "Para evitar contratar desenvolvedores."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 18,
+      "pergunta": "Qual é o principal objetivo de um plano de negócios?",
+      "alternativas": {
+        "A": "Estabelecer as metas financeiras anuais.",
+        "B": "Criar campanhas publicitárias.",
+        "C": "Guiar decisões estratégicas com base em dados.",
+        "D": "Registrar marca e logotipo."
+      },
+      "resposta_correta": "D"
+    },
+    {
+      "id": 19,
+      "pergunta": "O que representa 'Fontes de Receita' no modelo de negócios?",
+      "alternativas": {
+        "A": "Custos operacionais.",
+        "B": "Métricas de desempenho.",
+        "C": "Formas como o negócio gera dinheiro.",
+        "D": "Despesas com fornecedores."
+      },
+      "resposta_correta": "A"
+    },
+    {
+      "id": 20,
+      "pergunta": "Qual é a principal vantagem de se usar o Canvas para planejar negócios?",
+      "alternativas": {
+        "A": "Criar um cronograma de atividades semanal.",
+        "B": "Registrar a empresa na Junta Comercial.",
+        "C": "Visualizar todos os aspectos do negócio de forma simples.",
+        "D": "Calcular o preço de venda do produto."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 21,
+      "pergunta": "O que é o Lean Canvas?",
+      "alternativas": {
+        "A": "Um software para gestão financeira de grandes empresas.",
+        "B": "Um plano de marketing para produtos físicos.",
+        "C": "Uma ferramenta para mapear os principais blocos de um modelo de negócio enxuto.",
+        "D": "Um sistema de controle de qualidade industrial."
+      },
+      "resposta_correta": "C"
+    },
+    {
+      "id": 22,
+      "pergunta": "Qual o principal objetivo de um Produto Mínimo Viável (MVP)?",
+      "alternativas": {
+        "A": "Obter retorno financeiro imediato.",
+        "B": "Criar um produto completo para o mercado.",
+        "C": "Validar uma ideia com o menor custo e esforço possível.",
+        "D": "Contratar uma equipe de marketing experiente."
+      },
+      "resposta_correta": "D"
+    },
+    {
+      "id": 23,
+      "pergunta": "O que representa o bloco 'Segmento de Clientes' no Lean Canvas?",
+      "alternativas": {
+        "A": "As despesas fixas da empresa.",
+        "B": "O público que se pretende atingir com o produto ou serviço.",
+        "C": "Os sócios e acionistas da organização.",
+        "D": "A análise da concorrência direta."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 24,
+      "pergunta": "Qual das alternativas descreve uma inovação disruptiva?",
+      "alternativas": {
+        "A": "Uma campanha publicitária muito criativa.",
+        "B": "A melhoria de um processo interno da empresa.",
+        "C": "Uma solução simples e acessível que inicia inferior, mas cresce e domina o mercado.",
+        "D": "A criação de uma nova embalagem de produto."
+      },
+      "resposta_correta": "A"
+    },
+    {
+      "id": 25,
+      "pergunta": "Para que serve a análise SWOT?",
+      "alternativas": {
+        "A": "Definir o preço final de um produto.",
+        "B": "Avaliar os custos fixos do negócio.",
+        "C": "Identificar forças, fraquezas, oportunidades e ameaças de um negócio.",
+        "D": "Controlar o estoque de produtos."
+      },
+      "resposta_correta": "D"
+    },
+    {
+      "id": 26,
+      "pergunta": "Qual a função de um pitch no contexto de startups?",
+      "alternativas": {
+        "A": "Controlar o fluxo de caixa da empresa.",
+        "B": "Apresentar rapidamente a ideia do negócio para atrair investidores.",
+        "C": "Gerenciar a logística de distribuição.",
+        "D": "Registrar a empresa em órgãos competentes."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 27,
+      "pergunta": "Qual o objetivo do bloco 'Canais' no Lean Canvas?",
+      "alternativas": {
+        "A": "Listar os concorrentes.",
+        "B": "Identificar parceiros estratégicos.",
+        "C": "Apontar os meios de distribuição e comunicação com o cliente.",
+        "D": "Definir o nome da marca."
+      },
+      "resposta_correta": "C"
+    },
+    {
+      "id": 28,
+      "pergunta": "Qual é a 'Proposta de Valor' em um modelo de negócio?",
+      "alternativas": {
+        "A": "A missão e visão da empresa.",
+        "B": "O diferencial que justifica a escolha pelo produto ou serviço.",
+        "C": "O valor de mercado estimado da empresa.",
+        "D": "O capital social registrado em cartório."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 29,
+      "pergunta": "Qual das opções é uma das 5 Forças de Porter?",
+      "alternativas": {
+        "A": "Receita Recorrente.",
+        "B": "Ameaça de novos entrantes.",
+        "C": "Faturamento Mensal.",
+        "D": "Segmento Premium."
+      },
+      "resposta_correta": "A"
+    },
+    {
+      "id": 30,
+      "pergunta": "O que caracteriza a Vantagem Injusta no Lean Canvas?",
+      "alternativas": {
+        "A": "Uma campanha publicitária de alto impacto.",
+        "B": "Algo que não pode ser copiado ou comprado.",
+        "C": "Um preço inferior ao da concorrência.",
+        "D": "Uma parceria com empresas grandes."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 31,
+      "pergunta": "Qual é a estrutura mais comum do Design Sprint?",
+      "alternativas": {
+        "A": "7 dias de planejamento e 3 de execução.",
+        "B": "2 dias de teste, 2 de venda e 1 de lançamento.",
+        "C": "5 dias com etapas específicas para entender, esboçar, decidir, prototipar e testar.",
+        "D": "Um mês completo de execução de projeto ágil."
+      },
+      "resposta_correta": "C"
+    },
+    {
+      "id": 32,
+      "pergunta": "O que é um Mockup?",
+      "alternativas": {
+        "A": "Uma planilha de gastos.",
+        "B": "Um desenho técnico do circuito.",
+        "C": "Uma representação visual aproximada de um produto final.",
+        "D": "Uma rede de contatos empresariais."
+      },
+      "resposta_correta": "D"
+    },
+    {
+      "id": 33,
+      "pergunta": "Qual é a principal função de um plano de negócios?",
+      "alternativas": {
+        "A": "Contratar funcionários.",
+        "B": "Validar a identidade visual do negócio.",
+        "C": "Guiar decisões estratégicas e analisar a viabilidade do negócio.",
+        "D": "Realizar a propaganda do produto."
+      },
+      "resposta_correta": "A"
+    },
+    {
+      "id": 34,
+      "pergunta": "O que representa o bloco 'Fluxos de Receita' no Lean Canvas?",
+      "alternativas": {
+        "A": "A previsão de despesas mensais.",
+        "B": "As formas pelas quais o negócio gera dinheiro.",
+        "C": "A lista de materiais utilizados na produção.",
+        "D": "Os custos de aquisição de clientes."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 35,
+      "pergunta": "Qual das opções abaixo melhor define o MVP?",
+      "alternativas": {
+        "A": "Produto pronto e com todas as funcionalidades.",
+        "B": "Primeiro esboço do produto para marketing.",
+        "C": "Versão simplificada de um produto para validação.",
+        "D": "Um protótipo sem interação com usuários."
+      },
+      "resposta_correta": "C"
+    },
+    {
+      "id": 36,
+      "pergunta": "Qual das seguintes é uma vantagem do uso do Lean Canvas?",
+      "alternativas": {
+        "A": "Produz relatórios contábeis automáticos.",
+        "B": "Permite análises estatísticas de mercado.",
+        "C": "Facilita a visualização do negócio de forma enxuta e clara.",
+        "D": "Gera contratos com fornecedores."
+      },
+      "resposta_correta": "D"
+    },
+    {
+      "id": 37,
+      "pergunta": "Em que contexto o Design Sprint é mais utilizado?",
+      "alternativas": {
+        "A": "Contratação de talentos.",
+        "B": "Testes de produtos finais no mercado.",
+        "C": "Resolução rápida de problemas complexos de produto.",
+        "D": "Planejamento financeiro a longo prazo."
+      },
+      "resposta_correta": "A"
+    },
+    {
+      "id": 38,
+      "pergunta": "O que diferencia uma inovação disruptiva de uma inovação incremental?",
+      "alternativas": {
+        "A": "A disruptiva melhora levemente um processo existente.",
+        "B": "A incremental substitui tecnologias obsoletas.",
+        "C": "A disruptiva começa inferior, mas transforma o mercado com o tempo.",
+        "D": "A incremental é voltada ao mercado financeiro."
+      },
+      "resposta_correta": "C"
+    },
+    {
+      "id": 39,
+      "pergunta": "O que significa 'Custo de Aquisição de Clientes' (CAC)?",
+      "alternativas": {
+        "A": "Lucro obtido por cliente.",
+        "B": "Valor gasto para conseguir um novo cliente.",
+        "C": "Custo de fidelização do consumidor.",
+        "D": "Custo de desenvolvimento de produto."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 40,
+      "pergunta": "Quais são os elementos que compõem a análise SWOT?",
+      "alternativas": {
+        "A": "Segmento, Receita, Valor e Preço.",
+        "B": "Missão, Visão, Valores e Cultura.",
+        "C": "Forças, Fraquezas, Oportunidades e Ameaças.",
+        "D": "Produto, Processo, Pessoas e Parcerias."
+      },
+      "resposta_correta": "C"
+    },
+    {
+      "id": 41,
+      "pergunta": "O que representa o 'Problema' no Lean Canvas?",
+      "alternativas": {
+        "A": "O ponto forte do produto.",
+        "B": "A dor do cliente que a solução se propõe a resolver.",
+        "C": "A concorrência atual.",
+        "D": "O tamanho do mercado."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 42,
+      "pergunta": "Para que serve a 'Métrica-Chave' no Lean Canvas?",
+      "alternativas": {
+        "A": "Avaliar a satisfação dos sócios.",
+        "B": "Medir ações críticas que sustentam o negócio.",
+        "C": "Calcular os impostos mensais.",
+        "D": "Definir os preços de venda."
+      },
+      "resposta_correta": "D"
+    },
+    {
+      "id": 43,
+      "pergunta": "Qual o papel dos 'Recursos-Chave' no Canvas?",
+      "alternativas": {
+        "A": "Elencar os fornecedores.",
+        "B": "Indicar os concorrentes.",
+        "C": "Apontar os elementos essenciais para funcionamento do negócio.",
+        "D": "Descrever os produtos concorrentes."
+      },
+      "resposta_correta": "C"
+    },
+    {
+      "id": 44,
+      "pergunta": "Como o Pitch ajuda startups?",
+      "alternativas": {
+        "A": "Reduzindo custos com publicidade.",
+        "B": "Conectando diretamente com investidores potenciais.",
+        "C": "Aumentando a carga tributária.",
+        "D": "Gerando relatórios fiscais."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 45,
+      "pergunta": "O que é um protótipo em Design Thinking?",
+      "alternativas": {
+        "A": "Um relatório de contabilidade.",
+        "B": "Uma versão inicial testável de uma solução.",
+        "C": "Uma planilha de custos variáveis.",
+        "D": "Um gráfico de desempenho financeiro."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 46,
+      "pergunta": "Qual a diferença entre mockup e protótipo?",
+      "alternativas": {
+        "A": "Mockup testa funcionalidade; protótipo mostra visual.",
+        "B": "Mockup é visual; protótipo testa funcionalidade.",
+        "C": "Ambos são apenas conceitos teóricos.",
+        "D": "Mockup e protótipo são sinônimos."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 47,
+      "pergunta": "O que é o Design Thinking?",
+      "alternativas": {
+        "A": "Um tipo de software de design gráfico.",
+        "B": "Uma abordagem centrada no cliente para resolver problemas complexos.",
+        "C": "Um modelo de negócios para startups.",
+        "D": "Uma ferramenta contábil."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 48,
+      "pergunta": "Qual é o objetivo do pitch de elevador?",
+      "alternativas": {
+        "A": "Fechar uma venda imediatamente.",
+        "B": "Explicar o modelo de negócio em reuniões longas.",
+        "C": "Apresentar uma ideia de forma rápida e convincente.",
+        "D": "Solicitar empréstimos a bancos."
+      },
+      "resposta_correta": "C"
+    },
+    {
+      "id": 49,
+      "pergunta": "Por que o MVP é importante?",
+      "alternativas": {
+        "A": "Porque reduz o valor percebido.",
+        "B": "Porque gera vendas automáticas.",
+        "C": "Porque ajuda a validar hipóteses antes de investir pesado.",
+        "D": "Porque ignora o feedback do cliente."
+      },
+      "resposta_correta": "C"
+    },
+    {
+      "id": 50,
+      "pergunta": "Em qual etapa do Design Sprint ocorre o teste com usuários reais?",
+      "alternativas": {
+        "A": "Dia 1",
+        "B": "Dia 3",
+        "C": "Dia 5",
+        "D": "Dia 2"
+      },
+      "resposta_correta": "C"
+    },
+    {
+      "id": 51,
+      "pergunta": "Qual das opções representa um canal no Canvas?",
+      "alternativas": {
+        "A": "Análise SWOT",
+        "B": "Email marketing",
+        "C": "Fluxo de caixa",
+        "D": "Controle de estoque"
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 52,
+      "pergunta": "Quais são os principais elementos do Canvas?",
+      "alternativas": {
+        "A": "Clientes, preço e lucro",
+        "B": "Segmentos, Proposta de Valor, Canais, Receita",
+        "C": "Produto, logística, TI",
+        "D": "Lucro, prejuízo e faturamento"
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 53,
+      "pergunta": "Qual o foco do Lean Canvas em relação ao Canvas tradicional?",
+      "alternativas": {
+        "A": "Foco em grandes corporações.",
+        "B": "Foco em aspectos mais arriscados para startups.",
+        "C": "Foco em fábricas industriais.",
+        "D": "Foco em franquias globais."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 54,
+      "pergunta": "O que se entende por estrutura de custos no Canvas?",
+      "alternativas": {
+        "A": "Impostos pagos por funcionários.",
+        "B": "Lista de fornecedores confiáveis.",
+        "C": "Principais custos do negócio.",
+        "D": "Orçamento do cliente final."
+      },
+      "resposta_correta": "C"
+    },
+    {
+      "id": 55,
+      "pergunta": "Qual o papel da proposta de valor no sucesso de um negócio?",
+      "alternativas": {
+        "A": "Conquistar investidores com promessas.",
+        "B": "Oferecer algo único e de valor ao cliente.",
+        "C": "Reduzir custos operacionais.",
+        "D": "Aumentar o número de colaboradores."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 56,
+      "pergunta": "O que diferencia o pitch de vendas do pitch de captação?",
+      "alternativas": {
+        "A": "O pitch de vendas é técnico e o de captação, jurídico.",
+        "B": "Pitch de vendas convence o cliente, o de captação, o investidor.",
+        "C": "Ambos são iguais.",
+        "D": "Pitch de vendas é para redes sociais; o outro, para rádio."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 57,
+      "pergunta": "Por que o Design Sprint é considerado ágil?",
+      "alternativas": {
+        "A": "Porque dispensa testes com clientes.",
+        "B": "Porque se baseia apenas em intuição.",
+        "C": "Porque foca em solução rápida e testes reais.",
+        "D": "Porque utiliza muitas planilhas."
+      },
+      "resposta_correta": "C"
+    },
+    {
+      "id": 58,
+      "pergunta": "Em qual etapa do Design Thinking se cria o protótipo?",
+      "alternativas": {
+        "A": "Empatia",
+        "B": "Definição",
+        "C": "Prototipagem",
+        "D": "Ideação"
+      },
+      "resposta_correta": "C"
+    },
+    {
+      "id": 59,
+      "pergunta": "Qual é a utilidade prática de um mockup?",
+      "alternativas": {
+        "A": "Mostrar a estrutura jurídica da empresa.",
+        "B": "Testar funcionalidades do sistema operacional.",
+        "C": "Apresentar visualmente a solução proposta.",
+        "D": "Controlar estoque de produtos."
+      },
+      "resposta_correta": "C"
+    },
+    {
+      "id": 60,
+      "pergunta": "O que representa o bloco 'Parcerias Principais' no Canvas?",
+      "alternativas": {
+        "A": "Concorrentes diretos.",
+        "B": "Clientes recorrentes.",
+        "C": "Atores externos que ajudam na entrega de valor.",
+        "D": "Investidores privados."
+      },
+      "resposta_correta": "C"
+    },
+    {
+      "id": 61,
+      "pergunta": "Qual é uma das principais vantagens da inovação disruptiva?",
+      "alternativas": {
+        "A": "Alto custo inicial.",
+        "B": "Manutenção do status quo.",
+        "C": "Democratização do acesso ao mercado.",
+        "D": "Exclusividade para grandes empresas."
+      },
+      "resposta_correta": "C"
+    },
+    {
+      "id": 62,
+      "pergunta": "No MVP, o que é mais importante?",
+      "alternativas": {
+        "A": "Ter o design mais bonito possível.",
+        "B": "Obter validação do cliente real.",
+        "C": "Incluir todas as funcionalidades.",
+        "D": "Reduzir a equipe ao mínimo."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 63,
+      "pergunta": "Qual é o benefício de um pitch bem feito?",
+      "alternativas": {
+        "A": "Fechar vendas com qualquer público.",
+        "B": "Conquistar apoio estratégico de quem assiste.",
+        "C": "Evitar marketing digital.",
+        "D": "Substituir o plano de negócios."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 64,
+      "pergunta": "Qual é a função da etapa de ideação no Design Thinking?",
+      "alternativas": {
+        "A": "Analisar os custos do projeto.",
+        "B": "Gerar múltiplas soluções possíveis.",
+        "C": "Testar o MVP no mercado.",
+        "D": "Definir os dados contábeis."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 65,
+      "pergunta": "Qual o propósito da definição de métricas-chave no Canvas?",
+      "alternativas": {
+        "A": "Medir lucros por funcionário.",
+        "B": "Medir crescimento e desempenho do negócio.",
+        "C": "Reduzir impostos empresariais.",
+        "D": "Definir layout do escritório."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 66,
+      "pergunta": "Por que 'estrutura de custos' é essencial?",
+      "alternativas": {
+        "A": "Determina o nome da marca.",
+        "B": "Ajuda a prever os gastos do negócio.",
+        "C": "Diz quantos clientes serão atendidos.",
+        "D": "Registra o CNPJ automaticamente."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 67,
+      "pergunta": "Em que situação usar um pitch de captação?",
+      "alternativas": {
+        "A": "Para vender em shopping centers.",
+        "B": "Para buscar parcerias com investidores.",
+        "C": "Para lançar anúncios pagos.",
+        "D": "Para treinar equipe de RH."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 68,
+      "pergunta": "Como um protótipo ajuda no Design Sprint?",
+      "alternativas": {
+        "A": "Evita retrabalho e valida com usuários.",
+        "B": "Serve apenas como ilustração gráfica.",
+        "C": "Ajuda a desenvolver marketing digital.",
+        "D": "Garante fidelidade à ideia inicial."
+      },
+      "resposta_correta": "A"
+    },
+    {
+      "id": 69,
+      "pergunta": "Quais são os 5 dias do Design Sprint?",
+      "alternativas": {
+        "A": "Planejar, testar, divulgar, vender, escalar.",
+        "B": "Entender, Esboçar, Decidir, Prototipar, Testar.",
+        "C": "Estudar, Criar, Executar, Acompanhar, Corrigir.",
+        "D": "Pensar, Projetar, Programar, Publicar, Vender."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 70,
+      "pergunta": "O que um pitch precisa ter?",
+      "alternativas": {
+        "A": "Somente uma apresentação de slides.",
+        "B": "Uma explicação convincente, clara e curta.",
+        "C": "Declaração contábil do último trimestre.",
+        "D": "Projeção de vendas para 10 anos."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 71,
+      "pergunta": "Qual o papel dos parceiros-chave no Canvas?",
+      "alternativas": {
+        "A": "Substituir os clientes na cadeia de valor.",
+        "B": "Ajudar a empresa em atividades essenciais ou distribuição.",
+        "C": "Recrutar novos funcionários.",
+        "D": "Executar todas as tarefas internas da empresa."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 72,
+      "pergunta": "Por que a etapa de empatia é essencial no Design Thinking?",
+      "alternativas": {
+        "A": "Ajuda a criar logotipos para a marca.",
+        "B": "Garante a execução do plano de negócios.",
+        "C": "Permite entender profundamente as necessidades do usuário.",
+        "D": "Facilita a análise de concorrentes diretos."
+      },
+      "resposta_correta": "C"
+    },
+    {
+      "id": 73,
+      "pergunta": "Qual a utilidade da definição do problema no processo de inovação?",
+      "alternativas": {
+        "A": "Para escrever uma missão empresarial.",
+        "B": "Para apresentar ideias aos concorrentes.",
+        "C": "Para resolver dores reais dos usuários.",
+        "D": "Para substituir testes de produto."
+      },
+      "resposta_correta": "C"
+    },
+    {
+      "id": 74,
+      "pergunta": "No Design Thinking, o que vem após a etapa de empatia?",
+      "alternativas": {
+        "A": "Prototipagem.",
+        "B": "Teste de mercado.",
+        "C": "Definição do problema.",
+        "D": "Escolha de fornecedores."
+      },
+      "resposta_correta": "C"
+    },
+    {
+      "id": 75,
+      "pergunta": "Como o Canvas auxilia empreendedores?",
+      "alternativas": {
+        "A": "Criando uma campanha de marketing.",
+        "B": "Organizando o modelo de negócio em um quadro visual.",
+        "C": "Registrando patentes de forma legal.",
+        "D": "Elaborando contratos jurídicos."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 76,
+      "pergunta": "Qual a principal vantagem de um MVP em relação a um produto completo no início?",
+      "alternativas": {
+        "A": "Ele gera maior receita imediata.",
+        "B": "Ele reduz o risco e permite aprendizado rápido.",
+        "C": "Ele é mais fácil de patentear.",
+        "D": "Ele atinge um público muito maior desde o início."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 77,
+      "pergunta": "O que é um 'early adopter' no contexto de lançamento de um MVP?",
+      "alternativas": {
+        "A": "Um investidor anjo que financia a startup.",
+        "B": "Um concorrente que copia a ideia do produto.",
+        "C": "Um cliente inicial que adota o produto antes dos demais.",
+        "D": "Um membro da equipe de desenvolvimento do produto."
+      },
+      "resposta_correta": "C"
+    },
+    {
+      "id": 78,
+      "pergunta": "Qual dos seguintes não é um bloco do Lean Canvas?",
+      "alternativas": {
+        "A": "Segmentos de Clientes.",
+        "B": "Métricas-Chave.",
+        "C": "Ações de Marketing.",
+        "D": "Proposta de Valor Única."
+      },
+      "resposta_correta": "C"
+    },
+    {
+      "id": 79,
+      "pergunta": "O que a 'Solução' representa no Lean Canvas?",
+      "alternativas": {
+        "A": "A equipe de vendas do negócio.",
+        "B": "As funcionalidades do produto que resolvem o problema do cliente.",
+        "C": "Os canais de distribuição utilizados.",
+        "D": "O preço de venda do serviço."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 80,
+      "pergunta": "No Design Sprint, qual o objetivo do dia de 'Esboçar'?",
+      "alternativas": {
+        "A": "Definir o público-alvo para o marketing.",
+        "B": "Desenhar e refinar ideias para a solução.",
+        "C": "Analisar as finanças do projeto.",
+        "D": "Realizar testes com usuários."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 81,
+      "pergunta": "O que o conceito de 'pivotar' significa para uma startup?",
+      "alternativas": {
+        "A": "Aumentar o investimento em marketing.",
+        "B": "Mudar a estratégia ou modelo de negócio com base em aprendizados.",
+        "C": "Contratar mais funcionários para a equipe.",
+        "D": "Registrar a patente da sua ideia principal."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 82,
+      "pergunta": "Qual a principal característica de um bom pitch?",
+      "alternativas": {
+        "A": "Ser longo e detalhado, cobrindo todos os aspectos.",
+        "B": "Ser complexo e técnico, impressionando especialistas.",
+        "C": "Ser claro, conciso e cativante.",
+        "D": "Ser focado apenas nos problemas financeiros da empresa."
+      },
+      "resposta_correta": "C"
+    },
+    {
+      "id": 83,
+      "pergunta": "Para que serve a 'Métrica Acionável' em um negócio enxuto?",
+      "alternativas": {
+        "A": "Para medir a satisfação dos funcionários.",
+        "B": "Para guiar decisões e ações futuras com base em dados.",
+        "C": "Para calcular o lucro bruto do mês.",
+        "D": "Para definir o nome da empresa."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 84,
+      "pergunta": "Qual das seguintes NÃO é uma fase do Design Thinking?",
+      "alternativas": {
+        "A": "Empatia.",
+        "B": "Definição.",
+        "C": "Financiamento.",
+        "D": "Prototipagem."
+      },
+      "resposta_correta": "C"
+    },
+    {
+      "id": 85,
+      "pergunta": "O que é um 'benchmark' no plano de negócios?",
+      "alternativas": {
+        "A": "Uma estratégia para reduzir custos operacionais.",
+        "B": "Um ponto de referência para comparação de desempenho.",
+        "C": "Um tipo de software de gestão de projetos.",
+        "D": "Um processo de recrutamento de talentos."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 86,
+      "pergunta": "Qual o benefício de ter uma 'Vantagem Injusta' no Lean Canvas?",
+      "alternativas": {
+        "A": "Facilita a obtenção de empréstimos bancários.",
+        "B": "Cria uma barreira para a concorrência.",
+        "C": "Permite aumentar os preços do produto livremente.",
+        "D": "Assegura a satisfação de todos os clientes."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 87,
+      "pergunta": "Como o Design Sprint contribui para o desenvolvimento de produtos?",
+      "alternativas": {
+        "A": "Apenas na fase final de lançamento.",
+        "B": "Ao permitir testar e validar ideias rapidamente.",
+        "C": "Limitando a criatividade da equipe.",
+        "D": "Focando em análises burocráticas."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 88,
+      "pergunta": "O que a 'Estrutura de Custos' descreve no Business Model Canvas?",
+      "alternativas": {
+        "A": "As receitas provenientes de vendas.",
+        "B": "Os gastos mais significativos para operar o negócio.",
+        "C": "O valor de mercado da empresa.",
+        "D": "A estimativa de impostos anuais."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 89,
+      "pergunta": "Qual é a principal diferença entre um 'plano de negócios' e um 'Business Model Canvas'?",
+      "alternativas": {
+        "A": "O plano de negócios é mais resumido e o Canvas é detalhado.",
+        "B": "O Canvas é uma ferramenta visual e o plano de negócios é um documento extenso.",
+        "C": "Ambos são usados apenas por grandes empresas.",
+        "D": "O plano de negócios é focado em design e o Canvas em finanças."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 90,
+      "pergunta": "No contexto de inovação, o que significa 'Iterar'?",
+      "alternativas": {
+        "A": "Copiar a ideia de um concorrente.",
+        "B": "Repetir o mesmo erro várias vezes.",
+        "C": "Refinar e melhorar uma ideia com base em feedback e testes.",
+        "D": "Lançar o produto sem validação prévia."
+      },
+      "resposta_correta": "C"
+    },
+    {
+      "id": 91,
+      "pergunta": "Qual o papel do 'Poder de Negociação dos Compradores' nas 5 Forças de Porter?",
+      "alternativas": {
+        "A": "Determina o nível de produtividade da equipe.",
+        "B": "Indica a capacidade dos clientes de influenciar os preços.",
+        "C": "Avalia a qualidade dos fornecedores.",
+        "D": "Mede o potencial de inovação do setor."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 92,
+      "pergunta": "Por que o 'Segmento de Clientes' é crucial no Lean Canvas?",
+      "alternativas": {
+        "A": "Para definir o preço dos produtos dos concorrentes.",
+        "B": "Para entender quem você está tentando ajudar e suas dores.",
+        "C": "Para mapear os custos fixos da empresa.",
+        "D": "Para escolher o nome da marca."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 93,
+      "pergunta": "Qual o objetivo de um 'Roadmap' de produto?",
+      "alternativas": {
+        "A": "Detalhar os finanças da empresa.",
+        "B": "Descrever a visão e evolução do produto ao longo do tempo.",
+        "C": "Registrar as vendas diárias.",
+        "D": "Organizar as reuniões da equipe."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 94,
+      "pergunta": "O que um 'Pitch Deck' geralmente contém?",
+      "alternativas": {
+        "A": "Apenas a biografia dos fundadores.",
+        "B": "Dados financeiros completos e auditorias.",
+        "C": "Uma apresentação visual da ideia, problema, solução e equipe.",
+        "D": "O plano detalhado de expansão global."
+      },
+      "resposta_correta": "C"
+    },
+    {
+      "id": 95,
+      "pergunta": "No contexto de MVP, o que 'Construir-Medir-Aprender' significa?",
+      "alternativas": {
+        "A": "Um ciclo de desenvolvimento de software tradicional.",
+        "B": "Uma metodologia de vendas para produtos complexos.",
+        "C": "Um processo iterativo para validar e refinar o produto.",
+        "D": "Uma forma de gestão de projetos lineares."
+      },
+      "resposta_correta": "C"
+    },
+    {
+      "id": 96,
+      "pergunta": "Qual das seguintes é uma 'Atividade-Chave' no Canvas?",
+      "alternativas": {
+        "A": "Consumo de cafezinho pela equipe.",
+        "B": "Produção, desenvolvimento de software ou marketing.",
+        "C": "Controle de despesas pessoais dos funcionários.",
+        "D": "Cálculo de juros bancários."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 97,
+      "pergunta": "O que um 'Protótipo de Baixa Fidelidade' busca testar?",
+      "alternativas": {
+        "A": "A interface gráfica final do produto.",
+        "B": "A ideia central e a usabilidade básica, sem detalhes visuais.",
+        "C": "A segurança e escalabilidade do sistema.",
+        "D": "A compatibilidade com todos os dispositivos existentes."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 98,
+      "pergunta": "Qual o papel da 'Solução' no Lean Canvas para startups?",
+      "alternativas": {
+        "A": "Listar todos os concorrentes indiretos.",
+        "B": "Apresentar a tecnologia subjacente ao produto.",
+        "C": "Oferecer a resposta para os problemas dos clientes-alvo.",
+        "D": "Definir o público-alvo para futuras campanhas de vendas."
+      },
+      "resposta_correta": "C"
+    },
+    {
+      "id": 99,
+      "pergunta": "Em qual cenário a 'Inovação Incremental' é mais comum?",
+      "alternativas": {
+        "A": "Na criação de mercados totalmente novos.",
+        "B": "Em indústrias que buscam pequenas melhorias em produtos existentes.",
+        "C": "Quando o foco é destruir os concorrentes.",
+        "D": "Em empresas que ignoram o feedback do cliente."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 100,
+      "pergunta": "Qual a importância de um 'Plano de Ação' em um plano de negócios?",
+      "alternativas": {
+        "A": "Apenas para cumprir exigências burocráticas.",
+        "B": "Detalhar o cronograma e responsabilidades para atingir os objetivos.",
+        "C": "Ignorar as metas financeiras de curto prazo.",
+        "D": "Manter os custos ocultos do projeto."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 101,
+      "pergunta": "Qual a finalidade de um 'Business Case'?",
+      "alternativas": {
+        "A": "Registrar a marca da empresa legalmente.",
+        "B": "Apresentar a justificativa e viabilidade de um projeto ou investimento.",
+        "C": "Detalhar o histórico de vendas de um produto.",
+        "D": "Avaliar o desempenho individual dos colaboradores."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 102,
+      "pergunta": "Em Design Thinking, por que 'Testar' é uma fase crucial?",
+      "alternativas": {
+        "A": "Para evitar a participação dos usuários finais.",
+        "B": "Para validar a solução com o público-alvo e obter feedback.",
+        "C": "Para garantir que o produto seja lançado sem falhas.",
+        "D": "Para definir os preços de custo do material."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 103,
+      "pergunta": "O que é um 'Canal de Distribuição' no contexto de negócios?",
+      "alternativas": {
+        "A": "A forma como os funcionários se comunicam internamente.",
+        "B": "Os meios pelos quais o produto ou serviço chega ao cliente.",
+        "C": "Um tipo de estrutura de custos fixa.",
+        "D": "O método de contratação de novos talentos."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 104,
+      "pergunta": "Qual a importância da 'Curva S' na inovação disruptiva?",
+      "alternativas": {
+        "A": "Representa o crescimento linear de um produto tradicional.",
+        "B": "Ilustra o ciclo de vida e a adoção de uma tecnologia ou inovação.",
+        "C": "Descreve a estrutura organizacional de uma startup.",
+        "D": "Mede a satisfação do cliente em um serviço."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 105,
+      "pergunta": "O que o bloco 'Fontes de Receita' detalha no Canvas?",
+      "alternativas": {
+        "A": "Os custos operacionais do negócio.",
+        "B": "As diferentes maneiras pelas quais a empresa gera dinheiro.",
+        "C": "O investimento inicial necessário para a startup.",
+        "D": "A dívida total da empresa com fornecedores."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 106,
+      "pergunta": "Por que o 'Poder de Negociação dos Fornecedores' é relevante na análise de Porter?",
+      "alternativas": {
+        "A": "Afeta a capacidade da empresa de vender seus produtos.",
+        "B": "Influencia diretamente os custos e a qualidade dos insumos.",
+        "C": "Determina a demanda do consumidor pelo produto.",
+        "D": "Define a estratégia de marketing digital da empresa."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 107,
+      "pergunta": "Em um MVP, qual a função da 'Proposta de Valor'?",
+      "alternativas": {
+        "A": "Apenas atrair investidores.",
+        "B": "Comunicar o benefício central e único que o produto oferece ao cliente.",
+        "C": "Definir o preço de venda do protótipo.",
+        "D": "Identificar os custos de produção."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 108,
+      "pergunta": "Qual é um dos principais benefícios de usar o 'Lean Startup'?",
+      "alternativas": {
+        "A": "Garantir o sucesso imediato de qualquer negócio.",
+        "B": "Reduzir o desperdício e acelerar o ciclo de aprendizado.",
+        "C": "Eliminar a necessidade de um plano de negócios.",
+        "D": "Focar apenas na expansão de mercado."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 109,
+      "pergunta": "O que um 'elevator pitch' busca alcançar em pouco tempo?",
+      "alternativas": {
+        "A": "Uma venda complexa do produto.",
+        "B": "O interesse e curiosidade para uma conversa mais aprofundada.",
+        "C": "Um contrato assinado com o cliente.",
+        "D": "A listagem da empresa na bolsa de valores."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 110,
+      "pergunta": "Qual das seguintes alternativas descreve melhor a 'Ameaça de Produtos Substitutos' de Porter?",
+      "alternativas": {
+        "A": "Produtos idênticos vendidos pela concorrência.",
+        "B": "Novos produtos que satisfazem a mesma necessidade do cliente de forma diferente.",
+        "C": "Produtos com defeito de fabricação.",
+        "D": "Produtos que dependem de fornecedores exclusivos."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 111,
+      "pergunta": "No Design Thinking, qual a importância da fase de 'Definição'?",
+      "alternativas": {
+        "A": "Gerar a maior quantidade possível de ideias.",
+        "B": "Compreender profundamente os usuários sem focar em problemas.",
+        "C": "Transformar insights da empatia em problemas claros e acionáveis.",
+        "D": "Prototipar a primeira solução que surgir."
+      },
+      "resposta_correta": "C"
+    },
+    {
+      "id": 112,
+      "pergunta": "O que 'Métricas de Vaidade' representam no contexto de startups?",
+      "alternativas": {
+        "A": "Métricas que realmente indicam o crescimento sustentável do negócio.",
+        "B": "Dados que parecem impressionantes, mas não ajudam na tomada de decisão real.",
+        "C": "Indicadores financeiros obrigatórios por lei.",
+        "D": "Métricas relacionadas à popularidade da marca nas redes sociais."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 113,
+      "pergunta": "Qual é a principal aplicação do 'Lean Canvas'?",
+      "alternativas": {
+        "A": "Gerenciamento de grandes projetos de infraestrutura.",
+        "B": "Planejamento inicial e validação de ideias para startups.",
+        "C": "Análise de balanços financeiros de empresas consolidadas.",
+        "D": "Criação de planos de marketing detalhados para o varejo."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 114,
+      "pergunta": "O que significa 'Validação' no desenvolvimento de produtos e negócios?",
+      "alternativas": {
+        "A": "Lançar o produto no mercado sem testes prévios.",
+        "B": "Confirmar que a ideia ou solução atende às necessidades reais dos usuários.",
+        "C": "Obter aprovação legal para o registro da empresa.",
+        "D": "Garantir que a equipe de desenvolvimento seja certificada."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 115,
+      "pergunta": "Qual a importância do 'Time to Market' para um MVP?",
+      "alternativas": {
+        "A": "Garantir o preço mais alto possível para o produto.",
+        "B": "Reduzir o tempo de lançamento para aprender mais rápido com o mercado.",
+        "C": "Investir mais tempo em pesquisa de concorrência.",
+        "D": "Aumentar o número de funcionalidades antes do lançamento."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 116,
+      "pergunta": "O que o bloco 'Estrutura de Custos' do Canvas ajuda a identificar?",
+      "alternativas": {
+        "A": "Os lucros esperados do negócio.",
+        "B": "As principais despesas para operar o modelo de negócio.",
+        "C": "A capacidade de investimento de novos sócios.",
+        "D": "O percentual de impostos sobre a receita bruta."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 117,
+      "pergunta": "Como o 'Design Sprint' contribui para a inovação?",
+      "alternativas": {
+        "A": "Impedindo qualquer tipo de falha no projeto.",
+        "B": "Permitindo testar ideias ousadas sem o risco de um lançamento completo.",
+        "C": "Focando apenas em melhorias incrementais de produtos.",
+        "D": "Eliminando a necessidade de pesquisa de mercado."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 118,
+      "pergunta": "O que é um 'Prototipo de Alta Fidelidade'?",
+      "alternativas": {
+        "A": "Um rascunho rápido feito em papel.",
+        "B": "Uma versão visualmente detalhada e interativa do produto.",
+        "C": "Um documento descritivo sem qualquer representação visual.",
+        "D": "Um produto já lançado no mercado para todos os usuários."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 119,
+      "pergunta": "Qual o foco principal do 'Business Model Canvas' em comparação com um plano de negócios tradicional?",
+      "alternativas": {
+        "A": "Detalhar os aspectos jurídicos e contábeis exaustivamente.",
+        "B": "Oferecer uma visão geral e visual dos elementos-chave do negócio.",
+        "C": "Focar apenas nas projeções financeiras de longo prazo.",
+        "D": "Ser utilizado exclusivamente por startups de tecnologia."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 120,
+      "pergunta": "O que significa 'Fit Problema-Solução' no Lean Canvas?",
+      "alternativas": {
+        "A": "O alinhamento da equipe com a visão da empresa.",
+        "B": "A garantia de que a solução proposta realmente resolve o problema do cliente.",
+        "C": "A correspondência entre o preço e o custo de produção.",
+        "D": "A adequação da tecnologia utilizada ao mercado."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 121,
+      "pergunta": "Qual a função do 'Fluxo de Receita' no modelo de negócios?",
+      "alternativas": {
+        "A": "Descrever os gastos mensais da empresa.",
+        "B": "Indicar como a empresa pretende gerar dinheiro com seu produto/serviço.",
+        "C": "Mostrar o volume de vendas dos concorrentes.",
+        "D": "Definir o salário dos colaboradores."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 122,
+      "pergunta": "Por que a 'Proposta de Valor Única' é fundamental no Lean Canvas?",
+      "alternativas": {
+        "A": "Para evitar qualquer tipo de concorrência.",
+        "B": "Para deixar claro o que torna o produto ou serviço diferente e melhor.",
+        "C": "Para garantir um preço mais elevado no mercado.",
+        "D": "Para simplificar as atividades-chave da empresa."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 123,
+      "pergunta": "Em um 'Pitch', qual é a importância da 'equipe'?",
+      "alternativas": {
+        "A": "Apenas para listar os cargos de cada um.",
+        "B": "É um fator crucial para investidores avaliarem a capacidade de execução.",
+        "C": "Não é um elemento relevante em um pitch.",
+        "D": "Serve apenas para impressionar com nomes famosos."
+      },
+      "resposta_correta": "B"
+    },
+    {
+      "id": 124,
+      "pergunta": "O que o conceito de 'Escalabilidade' significa para uma startup?",
+      "alternativas": {
+        "A": "A capacidade de crescer a receita sem aumentar proporcionalmente os custos.",
+        "B": "A necessidade de contratar mais pessoas para cada novo cliente.",
+        "C": "A dificuldade de expandir o negócio para novos mercados.",
+        "D": "A dependência de poucos clientes para sobreviver."
+      },
+      "resposta_correta": "A"
+    },
+    {
+      "id": 125,
+      "pergunta": "Qual a principal vantagem de usar o 'Design Thinking' na resolução de problemas?",
+      "alternativas": {
+        "A": "Garantir uma solução perfeita na primeira tentativa.",
+        "B": "Focar exclusivamente na tecnologia envolvida.",
+        "C": "Centrar a solução nas necessidades e experiências dos usuários.",
+        "D": "Minimizar o tempo gasto em pesquisa."
+      },
+      "resposta_correta": "C"
+    },
   {
     "id": 126,
-    "pergunta": "Pergunta exemplo 126: Qual das alternativas representa corretamente o conceito apresentado?",
+    "pergunta": "Qual princípio ético é essencial ao desenvolver um MVP que coleta dados de usuários?",
     "alternativas": {
-      "A": "Alternativa A da questão 126",
-      "B": "Alternativa B da questão 126",
-      "C": "Alternativa C da questão 126",
-      "D": "Alternativa D da questão 126"
+      "A": "Maximizar o lucro com a venda de dados.",
+      "B": "Transparência e consentimento explícito na coleta.",
+      "C": "Ignorar regulamentações para agilizar o lançamento.",
+      "D": "Ocultar os termos de uso em letras miúdas."
     },
-    "resposta_correta": "D"
+    "resposta_correta": "B"
   },
   {
     "id": 127,
-    "pergunta": "Pergunta exemplo 127: Qual das alternativas representa corretamente o conceito apresentado?",
+    "pergunta": "Como a disruptização pode contribuir para a sustentabilidade ambiental?",
     "alternativas": {
-      "A": "Alternativa A da questão 127",
-      "B": "Alternativa B da questão 127",
-      "C": "Alternativa C da questão 127",
-      "D": "Alternativa D da questão 127"
+      "A": "Aumentando a produção de descartáveis.",
+      "B": "Criando soluções que reduzem desperdício (ex.: economia compartilhada).",
+      "C": "Ignorando certificações ambientais.",
+      "D": "Priorizando apenas o retorno financeiro imediato."
     },
     "resposta_correta": "B"
   },
   {
     "id": 128,
-    "pergunta": "Pergunta exemplo 128: Qual das alternativas representa corretamente o conceito apresentado?",
+    "pergunta": "Qual item NÃO deve faltar em um plano de negócios sustentável?",
     "alternativas": {
-      "A": "Alternativa A da questão 128",
-      "B": "Alternativa B da questão 128",
-      "C": "Alternativa C da questão 128",
-      "D": "Alternativa D da questão 128"
+      "A": "Estratégia de descarte de resíduos.",
+      "B": "Uso de materiais não recicláveis.",
+      "C": "Ausência de metas de redução de carbono.",
+      "D": "Parcerias com fornecedores poluentes."
     },
     "resposta_correta": "A"
   },
   {
     "id": 129,
-    "pergunta": "Pergunta exemplo 129: Qual das alternativas representa corretamente o conceito apresentado?",
+    "pergunta": "O que é 'greenwashing' no contexto empresarial?",
     "alternativas": {
-      "A": "Alternativa A da questão 129",
-      "B": "Alternativa B da questão 129",
-      "C": "Alternativa C da questão 129",
-      "D": "Alternativa D da questão 129"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 130,
-    "pergunta": "Pergunta exemplo 130: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 130",
-      "B": "Alternativa B da questão 130",
-      "C": "Alternativa C da questão 130",
-      "D": "Alternativa D da questão 130"
+      "A": "Prática de lavagem de produtos com água reciclada.",
+      "B": "Marketing enganoso que exagera ações sustentáveis.",
+      "C": "Uso exclusivo de energia solar.",
+      "D": "Reciclagem interna de papéis."
     },
     "resposta_correta": "B"
   },
   {
-    "id": 131,
-    "pergunta": "Pergunta exemplo 131: Qual das alternativas representa corretamente o conceito apresentado?",
+    "id": 130,
+    "pergunta": "Por que a ética é crucial em inovações disruptivas?",
     "alternativas": {
-      "A": "Alternativa A da questão 131",
-      "B": "Alternativa B da questão 131",
-      "C": "Alternativa C da questão 131",
-      "D": "Alternativa D da questão 131"
+      "A": "Para evitar consequências sociais negativas (ex.: desemprego em massa).",
+      "B": "Para acelerar processos sem revisão jurídica.",
+      "C": "Para copiar modelos de concorrentes.",
+      "D": "Para reduzir custos com consultorias."
     },
     "resposta_correta": "A"
+  },
+  {
+    "id": 131,
+    "pergunta": "Qual exemplo representa uma inovação disruptiva sustentável?",
+    "alternativas": {
+      "A": "Carros elétricos com baterias de difícil reciclagem.",
+      "B": "Plataformas de logística que otimizam rotas para reduzir emissões.",
+      "C": "Embalagens plásticas descartáveis.",
+      "D": "Mineração de criptomoedas com alto consumo energético."
+    },
+    "resposta_correta": "B"
   },
   {
     "id": 132,
-    "pergunta": "Pergunta exemplo 132: Qual das alternativas representa corretamente o conceito apresentado?",
+    "pergunta": "No plano de negócios, o que é 'triple bottom line'?",
     "alternativas": {
-      "A": "Alternativa A da questão 132",
-      "B": "Alternativa B da questão 132",
-      "C": "Alternativa C da questão 132",
-      "D": "Alternativa D da questão 132"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 133,
-    "pergunta": "Pergunta exemplo 133: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 133",
-      "B": "Alternativa B da questão 133",
-      "C": "Alternativa C da questão 133",
-      "D": "Alternativa D da questão 133"
+      "A": "Foco em lucro, lucro e lucro.",
+      "B": "Balanço financeiro trimestral.",
+      "C": "Modelo que considera pessoas, planeta e lucro.",
+      "D": "Relatório de vendas em três mercados."
     },
     "resposta_correta": "C"
   },
   {
-    "id": 134,
-    "pergunta": "Pergunta exemplo 134: Qual das alternativas representa corretamente o conceito apresentado?",
+    "id": 133,
+    "pergunta": "Qual ação NÃO é ética ao validar um MVP?",
     "alternativas": {
-      "A": "Alternativa A da questão 134",
-      "B": "Alternativa B da questão 134",
-      "C": "Alternativa C da questão 134",
-      "D": "Alternativa D da questão 134"
+      "A": "Testar com usuários sem explicar os riscos.",
+      "B": "Oferecer recompensa por feedback honesto.",
+      "C": "Documentar falhas para correção.",
+      "D": "Garantir privacidade dos dados coletados."
     },
     "resposta_correta": "A"
   },
   {
-    "id": 135,
-    "pergunta": "Pergunta exemplo 135: Qual das alternativas representa corretamente o conceito apresentado?",
+    "id": 134,
+    "pergunta": "Como a economia circular se relaciona com disruptização?",
     "alternativas": {
-      "A": "Alternativa A da questão 135",
-      "B": "Alternativa B da questão 135",
-      "C": "Alternativa C da questão 135",
-      "D": "Alternativa D da questão 135"
+      "A": "Promovendo descarte rápido de produtos.",
+      "B": "Criando modelos de reuso e reciclagem inovadores.",
+      "C": "Ignorando a vida útil dos materiais.",
+      "D": "Aumentando a produção linear."
     },
-    "resposta_correta": "D"
+    "resposta_correta": "B"
   },
   {
-    "id": 136,
-    "pergunta": "Pergunta exemplo 136: Qual das alternativas representa corretamente o conceito apresentado?",
+    "id": 135,
+    "pergunta": "Qual seção do plano de negócios deve abordar impacto ambiental?",
     "alternativas": {
-      "A": "Alternativa A da questão 136",
-      "B": "Alternativa B da questão 136",
-      "C": "Alternativa C da questão 136",
-      "D": "Alternativa D da questão 136"
+      "A": "Apenas no anexo técnico.",
+      "B": "Em nenhuma seção, pois é irrelevante.",
+      "C": "Em estratégias operacionais e de responsabilidade social.",
+      "D": "Somente no resumo executivo."
     },
     "resposta_correta": "C"
   },
   {
-    "id": 137,
-    "pergunta": "Pergunta exemplo 137: Qual das alternativas representa corretamente o conceito apresentado?",
+    "id": 136,
+    "pergunta": "O que é 'obsolescência programada' na disruptização?",
     "alternativas": {
-      "A": "Alternativa A da questão 137",
-      "B": "Alternativa B da questão 137",
-      "C": "Alternativa C da questão 137",
-      "D": "Alternativa D da questão 137"
+      "A": "Planejamento para que produtos durem mais.",
+      "B": "Estratégia para produtos se tornarem obsoletos rapidamente.",
+      "C": "Uso de materiais biodegradáveis.",
+      "D": "Inovação contínua sem substituição de versões."
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": 137,
+    "pergunta": "Qual prática é antiética em um pitch para investidores?",
+    "alternativas": {
+      "A": "Apresentar dados reais de testes.",
+      "B": "Superestimar projeções financeiras sem base.",
+      "C": "Mencionar riscos do negócio.",
+      "D": "Mostrar cases de concorrentes."
     },
     "resposta_correta": "B"
   },
   {
     "id": 138,
-    "pergunta": "Pergunta exemplo 138: Qual das alternativas representa corretamente o conceito apresentado?",
+    "pergunta": "Como incluir ESG (Environmental, Social, Governance) no Lean Canvas?",
     "alternativas": {
-      "A": "Alternativa A da questão 138",
-      "B": "Alternativa B da questão 138",
-      "C": "Alternativa C da questão 138",
-      "D": "Alternativa D da questão 138"
+      "A": "Ignorar, pois é burocracia desnecessária.",
+      "B": "Adicionar métricas de impacto social e ambiental nos blocos relevantes.",
+      "C": "Considerar apenas o governance para reduzir custos.",
+      "D": "Deixar para abordar após o lançamento."
     },
-    "resposta_correta": "C"
+    "resposta_correta": "B"
   },
   {
     "id": 139,
-    "pergunta": "Pergunta exemplo 139: Qual das alternativas representa corretamente o conceito apresentado?",
+    "pergunta": "Qual é um dilema ético comum em startups disruptivas?",
     "alternativas": {
-      "A": "Alternativa A da questão 139",
-      "B": "Alternativa B da questão 139",
-      "C": "Alternativa C da questão 139",
-      "D": "Alternativa D da questão 139"
+      "A": "Escolher entre escala rápida e impacto social positivo.",
+      "B": "Seguir todas as regras sem questionar.",
+      "C": "Evitar qualquer risco jurídico.",
+      "D": "Não inovar para manter empregos tradicionais."
     },
     "resposta_correta": "A"
   },
   {
     "id": 140,
-    "pergunta": "Pergunta exemplo 140: Qual das alternativas representa corretamente o conceito apresentado?",
+    "pergunta": "O que é 'upcycling' em negócios sustentáveis?",
     "alternativas": {
-      "A": "Alternativa A da questão 140",
-      "B": "Alternativa B da questão 140",
-      "C": "Alternativa C da questão 140",
-      "D": "Alternativa D da questão 140"
+      "A": "Descartar materiais de forma segura.",
+      "B": "Transformar resíduos em produtos de maior valor.",
+      "C": "Reciclar apenas plásticos.",
+      "D": "Reduzir a produção sem reutilizar."
     },
-    "resposta_correta": "A"
+    "resposta_correta": "B"
   },
   {
     "id": 141,
-    "pergunta": "Pergunta exemplo 141: Qual das alternativas representa corretamente o conceito apresentado?",
+    "pergunta": "Qual estratégia NÃO é válida para um plano de negócios verde?",
     "alternativas": {
-      "A": "Alternativa A da questão 141",
-      "B": "Alternativa B da questão 141",
-      "C": "Alternativa C da questão 141",
-      "D": "Alternativa D da questão 141"
+      "A": "Certificações ambientais (ex.: ISO 14001).",
+      "B": "Parcerias com cooperativas de reciclagem.",
+      "C": "Uso exclusivo de energia não renovável.",
+      "D": "Logística reversa para embalagens."
     },
     "resposta_correta": "C"
   },
   {
     "id": 142,
-    "pergunta": "Pergunta exemplo 142: Qual das alternativas representa corretamente o conceito apresentado?",
+    "pergunta": "Por que a disruptização pode ser ameaçada por questões éticas?",
     "alternativas": {
-      "A": "Alternativa A da questão 142",
-      "B": "Alternativa B da questão 142",
-      "C": "Alternativa C da questão 142",
-      "D": "Alternativa D da questão 142"
+      "A": "Pela falta de concorrência no mercado.",
+      "B": "Pela possibilidade de excluir grupos sociais ou violar privacidade.",
+      "C": "Por ser sempre mais cara que modelos tradicionais.",
+      "D": "Por depender de patentes internacionais."
     },
-    "resposta_correta": "C"
+    "resposta_correta": "B"
   },
   {
     "id": 143,
-    "pergunta": "Pergunta exemplo 143: Qual das alternativas representa corretamente o conceito apresentado?",
+    "pergunta": "Qual indicador mede eficiência ambiental em um negócio?",
     "alternativas": {
-      "A": "Alternativa A da questão 143",
-      "B": "Alternativa B da questão 143",
-      "C": "Alternativa C da questão 143",
-      "D": "Alternativa D da questão 143"
+      "A": "Número de funcionários.",
+      "B": "Pegada de carbono por unidade produzida.",
+      "C": "Taxa de juros bancária.",
+      "D": "Lucro líquido trimestral."
     },
     "resposta_correta": "B"
   },
   {
     "id": 144,
-    "pergunta": "Pergunta exemplo 144: Qual das alternativas representa corretamente o conceito apresentado?",
+    "pergunta": "O que é 'compliance' em ética empresarial?",
     "alternativas": {
-      "A": "Alternativa A da questão 144",
-      "B": "Alternativa B da questão 144",
-      "C": "Alternativa C da questão 144",
-      "D": "Alternativa D da questão 144"
+      "A": "Cumprimento de leis e regulamentos.",
+      "B": "Flexibilização de normas para inovar.",
+      "C": "Redução de custos com multas.",
+      "D": "Venda de produtos sem certificação."
     },
     "resposta_correta": "A"
   },
   {
     "id": 145,
-    "pergunta": "Pergunta exemplo 145: Qual das alternativas representa corretamente o conceito apresentado?",
+    "pergunta": "Como a disruptização afeta empregos tradicionais?",
     "alternativas": {
-      "A": "Alternativa A da questão 145",
-      "B": "Alternativa B da questão 145",
-      "C": "Alternativa C da questão 145",
-      "D": "Alternativa D da questão 145"
+      "A": "Sempre os elimina sem compensação.",
+      "B": "Pode substituí-los, mas cria novas oportunidades.",
+      "C": "Nunca impacta o mercado de trabalho.",
+      "D": "Apenas beneficia setores informais."
     },
-    "resposta_correta": "D"
+    "resposta_correta": "B"
   },
   {
     "id": 146,
-    "pergunta": "Pergunta exemplo 146: Qual das alternativas representa corretamente o conceito apresentado?",
+    "pergunta": "Qual prática é sustentável no desenvolvimento de produtos?",
     "alternativas": {
-      "A": "Alternativa A da questão 146",
-      "B": "Alternativa B da questão 146",
-      "C": "Alternativa C da questão 146",
-      "D": "Alternativa D da questão 146"
+      "A": "Usar materiais virgens sempre.",
+      "B": "Projetar para facilitar a desmontagem e reparo.",
+      "C": "Ignorar a eficiência energética.",
+      "D": "Evitar avaliações de ciclo de vida."
     },
-    "resposta_correta": "C"
+    "resposta_correta": "B"
   },
   {
     "id": 147,
-    "pergunta": "Pergunta exemplo 147: Qual das alternativas representa corretamente o conceito apresentado?",
+    "pergunta": "O que é 'impacto social positivo' em um modelo de negócio?",
     "alternativas": {
-      "A": "Alternativa A da questão 147",
-      "B": "Alternativa B da questão 147",
-      "C": "Alternativa C da questão 147",
-      "D": "Alternativa D da questão 147"
+      "A": "Apenas gerar lucro para acionistas.",
+      "B": "Contribuir para resolver problemas sociais (ex.: inclusão digital).",
+      "C": "Ter sede em bairros nobres.",
+      "D": "Contratar apenas profissionais experientes."
     },
-    "resposta_correta": "A"
+    "resposta_correta": "B"
   },
   {
     "id": 148,
-    "pergunta": "Pergunta exemplo 148: Qual das alternativas representa corretamente o conceito apresentado?",
+    "pergunta": "Qual risco ético ao usar IA em produtos disruptivos?",
     "alternativas": {
-      "A": "Alternativa A da questão 148",
-      "B": "Alternativa B da questão 148",
-      "C": "Alternativa C da questão 148",
-      "D": "Alternativa D da questão 148"
+      "A": "Vieses algorítmicos que discriminam grupos.",
+      "B": "Custos altos de desenvolvimento.",
+      "C": "Necessidade de treinamento técnico.",
+      "D": "Falta de interesse do mercado."
     },
-    "resposta_correta": "D"
+    "resposta_correta": "A"
   },
   {
     "id": 149,
-    "pergunta": "Pergunta exemplo 149: Qual das alternativas representa corretamente o conceito apresentado?",
+    "pergunta": "O que é 'capitalismo consciente'?",
     "alternativas": {
-      "A": "Alternativa A da questão 149",
-      "B": "Alternativa B da questão 149",
-      "C": "Alternativa C da questão 149",
-      "D": "Alternativa D da questão 149"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 150,
-    "pergunta": "Pergunta exemplo 150: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 150",
-      "B": "Alternativa B da questão 150",
-      "C": "Alternativa C da questão 150",
-      "D": "Alternativa D da questão 150"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 151,
-    "pergunta": "Pergunta exemplo 151: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 151",
-      "B": "Alternativa B da questão 151",
-      "C": "Alternativa C da questão 151",
-      "D": "Alternativa D da questão 151"
+      "A": "Foco exclusivo em maximizar lucros.",
+      "B": "Modelo que integra propósito social e rentabilidade.",
+      "C": "Empresas sem fins lucrativos.",
+      "D": "Investimento apenas em grandes corporações."
     },
     "resposta_correta": "B"
   },
   {
-    "id": 152,
-    "pergunta": "Pergunta exemplo 152: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 152",
-      "B": "Alternativa B da questão 152",
-      "C": "Alternativa C da questão 152",
-      "D": "Alternativa D da questão 152"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 153,
-    "pergunta": "Pergunta exemplo 153: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 153",
-      "B": "Alternativa B da questão 153",
-      "C": "Alternativa C da questão 153",
-      "D": "Alternativa D da questão 153"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 154,
-    "pergunta": "Pergunta exemplo 154: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 154",
-      "B": "Alternativa B da questão 154",
-      "C": "Alternativa C da questão 154",
-      "D": "Alternativa D da questão 154"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 155,
-    "pergunta": "Pergunta exemplo 155: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 155",
-      "B": "Alternativa B da questão 155",
-      "C": "Alternativa C da questão 155",
-      "D": "Alternativa D da questão 155"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 156,
-    "pergunta": "Pergunta exemplo 156: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 156",
-      "B": "Alternativa B da questão 156",
-      "C": "Alternativa C da questão 156",
-      "D": "Alternativa D da questão 156"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 157,
-    "pergunta": "Pergunta exemplo 157: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 157",
-      "B": "Alternativa B da questão 157",
-      "C": "Alternativa C da questão 157",
-      "D": "Alternativa D da questão 157"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 158,
-    "pergunta": "Pergunta exemplo 158: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 158",
-      "B": "Alternativa B da questão 158",
-      "C": "Alternativa C da questão 158",
-      "D": "Alternativa D da questão 158"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 159,
-    "pergunta": "Pergunta exemplo 159: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 159",
-      "B": "Alternativa B da questão 159",
-      "C": "Alternativa C da questão 159",
-      "D": "Alternativa D da questão 159"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 160,
-    "pergunta": "Pergunta exemplo 160: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 160",
-      "B": "Alternativa B da questão 160",
-      "C": "Alternativa C da questão 160",
-      "D": "Alternativa D da questão 160"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 161,
-    "pergunta": "Pergunta exemplo 161: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 161",
-      "B": "Alternativa B da questão 161",
-      "C": "Alternativa C da questão 161",
-      "D": "Alternativa D da questão 161"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 162,
-    "pergunta": "Pergunta exemplo 162: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 162",
-      "B": "Alternativa B da questão 162",
-      "C": "Alternativa C da questão 162",
-      "D": "Alternativa D da questão 162"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 163,
-    "pergunta": "Pergunta exemplo 163: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 163",
-      "B": "Alternativa B da questão 163",
-      "C": "Alternativa C da questão 163",
-      "D": "Alternativa D da questão 163"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 164,
-    "pergunta": "Pergunta exemplo 164: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 164",
-      "B": "Alternativa B da questão 164",
-      "C": "Alternativa C da questão 164",
-      "D": "Alternativa D da questão 164"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 165,
-    "pergunta": "Pergunta exemplo 165: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 165",
-      "B": "Alternativa B da questão 165",
-      "C": "Alternativa C da questão 165",
-      "D": "Alternativa D da questão 165"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 166,
-    "pergunta": "Pergunta exemplo 166: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 166",
-      "B": "Alternativa B da questão 166",
-      "C": "Alternativa C da questão 166",
-      "D": "Alternativa D da questão 166"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 167,
-    "pergunta": "Pergunta exemplo 167: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 167",
-      "B": "Alternativa B da questão 167",
-      "C": "Alternativa C da questão 167",
-      "D": "Alternativa D da questão 167"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 168,
-    "pergunta": "Pergunta exemplo 168: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 168",
-      "B": "Alternativa B da questão 168",
-      "C": "Alternativa C da questão 168",
-      "D": "Alternativa D da questão 168"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 169,
-    "pergunta": "Pergunta exemplo 169: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 169",
-      "B": "Alternativa B da questão 169",
-      "C": "Alternativa C da questão 169",
-      "D": "Alternativa D da questão 169"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 170,
-    "pergunta": "Pergunta exemplo 170: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 170",
-      "B": "Alternativa B da questão 170",
-      "C": "Alternativa C da questão 170",
-      "D": "Alternativa D da questão 170"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 171,
-    "pergunta": "Pergunta exemplo 171: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 171",
-      "B": "Alternativa B da questão 171",
-      "C": "Alternativa C da questão 171",
-      "D": "Alternativa D da questão 171"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 172,
-    "pergunta": "Pergunta exemplo 172: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 172",
-      "B": "Alternativa B da questão 172",
-      "C": "Alternativa C da questão 172",
-      "D": "Alternativa D da questão 172"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 173,
-    "pergunta": "Pergunta exemplo 173: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 173",
-      "B": "Alternativa B da questão 173",
-      "C": "Alternativa C da questão 173",
-      "D": "Alternativa D da questão 173"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 174,
-    "pergunta": "Pergunta exemplo 174: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 174",
-      "B": "Alternativa B da questão 174",
-      "C": "Alternativa C da questão 174",
-      "D": "Alternativa D da questão 174"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 175,
-    "pergunta": "Pergunta exemplo 175: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 175",
-      "B": "Alternativa B da questão 175",
-      "C": "Alternativa C da questão 175",
-      "D": "Alternativa D da questão 175"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 176,
-    "pergunta": "Pergunta exemplo 176: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 176",
-      "B": "Alternativa B da questão 176",
-      "C": "Alternativa C da questão 176",
-      "D": "Alternativa D da questão 176"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 177,
-    "pergunta": "Pergunta exemplo 177: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 177",
-      "B": "Alternativa B da questão 177",
-      "C": "Alternativa C da questão 177",
-      "D": "Alternativa D da questão 177"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 178,
-    "pergunta": "Pergunta exemplo 178: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 178",
-      "B": "Alternativa B da questão 178",
-      "C": "Alternativa C da questão 178",
-      "D": "Alternativa D da questão 178"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 179,
-    "pergunta": "Pergunta exemplo 179: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 179",
-      "B": "Alternativa B da questão 179",
-      "C": "Alternativa C da questão 179",
-      "D": "Alternativa D da questão 179"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 180,
-    "pergunta": "Pergunta exemplo 180: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 180",
-      "B": "Alternativa B da questão 180",
-      "C": "Alternativa C da questão 180",
-      "D": "Alternativa D da questão 180"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 181,
-    "pergunta": "Pergunta exemplo 181: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 181",
-      "B": "Alternativa B da questão 181",
-      "C": "Alternativa C da questão 181",
-      "D": "Alternativa D da questão 181"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 182,
-    "pergunta": "Pergunta exemplo 182: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 182",
-      "B": "Alternativa B da questão 182",
-      "C": "Alternativa C da questão 182",
-      "D": "Alternativa D da questão 182"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 183,
-    "pergunta": "Pergunta exemplo 183: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 183",
-      "B": "Alternativa B da questão 183",
-      "C": "Alternativa C da questão 183",
-      "D": "Alternativa D da questão 183"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 184,
-    "pergunta": "Pergunta exemplo 184: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 184",
-      "B": "Alternativa B da questão 184",
-      "C": "Alternativa C da questão 184",
-      "D": "Alternativa D da questão 184"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 185,
-    "pergunta": "Pergunta exemplo 185: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 185",
-      "B": "Alternativa B da questão 185",
-      "C": "Alternativa C da questão 185",
-      "D": "Alternativa D da questão 185"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 186,
-    "pergunta": "Pergunta exemplo 186: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 186",
-      "B": "Alternativa B da questão 186",
-      "C": "Alternativa C da questão 186",
-      "D": "Alternativa D da questão 186"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 187,
-    "pergunta": "Pergunta exemplo 187: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 187",
-      "B": "Alternativa B da questão 187",
-      "C": "Alternativa C da questão 187",
-      "D": "Alternativa D da questão 187"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 188,
-    "pergunta": "Pergunta exemplo 188: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 188",
-      "B": "Alternativa B da questão 188",
-      "C": "Alternativa C da questão 188",
-      "D": "Alternativa D da questão 188"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 189,
-    "pergunta": "Pergunta exemplo 189: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 189",
-      "B": "Alternativa B da questão 189",
-      "C": "Alternativa C da questão 189",
-      "D": "Alternativa D da questão 189"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 190,
-    "pergunta": "Pergunta exemplo 190: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 190",
-      "B": "Alternativa B da questão 190",
-      "C": "Alternativa C da questão 190",
-      "D": "Alternativa D da questão 190"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 191,
-    "pergunta": "Pergunta exemplo 191: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 191",
-      "B": "Alternativa B da questão 191",
-      "C": "Alternativa C da questão 191",
-      "D": "Alternativa D da questão 191"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 192,
-    "pergunta": "Pergunta exemplo 192: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 192",
-      "B": "Alternativa B da questão 192",
-      "C": "Alternativa C da questão 192",
-      "D": "Alternativa D da questão 192"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 193,
-    "pergunta": "Pergunta exemplo 193: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 193",
-      "B": "Alternativa B da questão 193",
-      "C": "Alternativa C da questão 193",
-      "D": "Alternativa D da questão 193"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 194,
-    "pergunta": "Pergunta exemplo 194: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 194",
-      "B": "Alternativa B da questão 194",
-      "C": "Alternativa C da questão 194",
-      "D": "Alternativa D da questão 194"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 195,
-    "pergunta": "Pergunta exemplo 195: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 195",
-      "B": "Alternativa B da questão 195",
-      "C": "Alternativa C da questão 195",
-      "D": "Alternativa D da questão 195"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 196,
-    "pergunta": "Pergunta exemplo 196: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 196",
-      "B": "Alternativa B da questão 196",
-      "C": "Alternativa C da questão 196",
-      "D": "Alternativa D da questão 196"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 197,
-    "pergunta": "Pergunta exemplo 197: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 197",
-      "B": "Alternativa B da questão 197",
-      "C": "Alternativa C da questão 197",
-      "D": "Alternativa D da questão 197"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 198,
-    "pergunta": "Pergunta exemplo 198: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 198",
-      "B": "Alternativa B da questão 198",
-      "C": "Alternativa C da questão 198",
-      "D": "Alternativa D da questão 198"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 199,
-    "pergunta": "Pergunta exemplo 199: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 199",
-      "B": "Alternativa B da questão 199",
-      "C": "Alternativa C da questão 199",
-      "D": "Alternativa D da questão 199"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 200,
-    "pergunta": "Pergunta exemplo 200: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 200",
-      "B": "Alternativa B da questão 200",
-      "C": "Alternativa C da questão 200",
-      "D": "Alternativa D da questão 200"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 201,
-    "pergunta": "Pergunta exemplo 201: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 201",
-      "B": "Alternativa B da questão 201",
-      "C": "Alternativa C da questão 201",
-      "D": "Alternativa D da questão 201"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 202,
-    "pergunta": "Pergunta exemplo 202: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 202",
-      "B": "Alternativa B da questão 202",
-      "C": "Alternativa C da questão 202",
-      "D": "Alternativa D da questão 202"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 203,
-    "pergunta": "Pergunta exemplo 203: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 203",
-      "B": "Alternativa B da questão 203",
-      "C": "Alternativa C da questão 203",
-      "D": "Alternativa D da questão 203"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 204,
-    "pergunta": "Pergunta exemplo 204: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 204",
-      "B": "Alternativa B da questão 204",
-      "C": "Alternativa C da questão 204",
-      "D": "Alternativa D da questão 204"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 205,
-    "pergunta": "Pergunta exemplo 205: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 205",
-      "B": "Alternativa B da questão 205",
-      "C": "Alternativa C da questão 205",
-      "D": "Alternativa D da questão 205"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 206,
-    "pergunta": "Pergunta exemplo 206: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 206",
-      "B": "Alternativa B da questão 206",
-      "C": "Alternativa C da questão 206",
-      "D": "Alternativa D da questão 206"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 207,
-    "pergunta": "Pergunta exemplo 207: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 207",
-      "B": "Alternativa B da questão 207",
-      "C": "Alternativa C da questão 207",
-      "D": "Alternativa D da questão 207"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 208,
-    "pergunta": "Pergunta exemplo 208: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 208",
-      "B": "Alternativa B da questão 208",
-      "C": "Alternativa C da questão 208",
-      "D": "Alternativa D da questão 208"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 209,
-    "pergunta": "Pergunta exemplo 209: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 209",
-      "B": "Alternativa B da questão 209",
-      "C": "Alternativa C da questão 209",
-      "D": "Alternativa D da questão 209"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 210,
-    "pergunta": "Pergunta exemplo 210: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 210",
-      "B": "Alternativa B da questão 210",
-      "C": "Alternativa C da questão 210",
-      "D": "Alternativa D da questão 210"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 211,
-    "pergunta": "Pergunta exemplo 211: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 211",
-      "B": "Alternativa B da questão 211",
-      "C": "Alternativa C da questão 211",
-      "D": "Alternativa D da questão 211"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 212,
-    "pergunta": "Pergunta exemplo 212: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 212",
-      "B": "Alternativa B da questão 212",
-      "C": "Alternativa C da questão 212",
-      "D": "Alternativa D da questão 212"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 213,
-    "pergunta": "Pergunta exemplo 213: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 213",
-      "B": "Alternativa B da questão 213",
-      "C": "Alternativa C da questão 213",
-      "D": "Alternativa D da questão 213"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 214,
-    "pergunta": "Pergunta exemplo 214: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 214",
-      "B": "Alternativa B da questão 214",
-      "C": "Alternativa C da questão 214",
-      "D": "Alternativa D da questão 214"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 215,
-    "pergunta": "Pergunta exemplo 215: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 215",
-      "B": "Alternativa B da questão 215",
-      "C": "Alternativa C da questão 215",
-      "D": "Alternativa D da questão 215"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 216,
-    "pergunta": "Pergunta exemplo 216: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 216",
-      "B": "Alternativa B da questão 216",
-      "C": "Alternativa C da questão 216",
-      "D": "Alternativa D da questão 216"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 217,
-    "pergunta": "Pergunta exemplo 217: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 217",
-      "B": "Alternativa B da questão 217",
-      "C": "Alternativa C da questão 217",
-      "D": "Alternativa D da questão 217"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 218,
-    "pergunta": "Pergunta exemplo 218: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 218",
-      "B": "Alternativa B da questão 218",
-      "C": "Alternativa C da questão 218",
-      "D": "Alternativa D da questão 218"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 219,
-    "pergunta": "Pergunta exemplo 219: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 219",
-      "B": "Alternativa B da questão 219",
-      "C": "Alternativa C da questão 219",
-      "D": "Alternativa D da questão 219"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 220,
-    "pergunta": "Pergunta exemplo 220: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 220",
-      "B": "Alternativa B da questão 220",
-      "C": "Alternativa C da questão 220",
-      "D": "Alternativa D da questão 220"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 221,
-    "pergunta": "Pergunta exemplo 221: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 221",
-      "B": "Alternativa B da questão 221",
-      "C": "Alternativa C da questão 221",
-      "D": "Alternativa D da questão 221"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 222,
-    "pergunta": "Pergunta exemplo 222: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 222",
-      "B": "Alternativa B da questão 222",
-      "C": "Alternativa C da questão 222",
-      "D": "Alternativa D da questão 222"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 223,
-    "pergunta": "Pergunta exemplo 223: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 223",
-      "B": "Alternativa B da questão 223",
-      "C": "Alternativa C da questão 223",
-      "D": "Alternativa D da questão 223"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 224,
-    "pergunta": "Pergunta exemplo 224: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 224",
-      "B": "Alternativa B da questão 224",
-      "C": "Alternativa C da questão 224",
-      "D": "Alternativa D da questão 224"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 225,
-    "pergunta": "Pergunta exemplo 225: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 225",
-      "B": "Alternativa B da questão 225",
-      "C": "Alternativa C da questão 225",
-      "D": "Alternativa D da questão 225"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 226,
-    "pergunta": "Pergunta exemplo 226: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 226",
-      "B": "Alternativa B da questão 226",
-      "C": "Alternativa C da questão 226",
-      "D": "Alternativa D da questão 226"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 227,
-    "pergunta": "Pergunta exemplo 227: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 227",
-      "B": "Alternativa B da questão 227",
-      "C": "Alternativa C da questão 227",
-      "D": "Alternativa D da questão 227"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 228,
-    "pergunta": "Pergunta exemplo 228: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 228",
-      "B": "Alternativa B da questão 228",
-      "C": "Alternativa C da questão 228",
-      "D": "Alternativa D da questão 228"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 229,
-    "pergunta": "Pergunta exemplo 229: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 229",
-      "B": "Alternativa B da questão 229",
-      "C": "Alternativa C da questão 229",
-      "D": "Alternativa D da questão 229"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 230,
-    "pergunta": "Pergunta exemplo 230: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 230",
-      "B": "Alternativa B da questão 230",
-      "C": "Alternativa C da questão 230",
-      "D": "Alternativa D da questão 230"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 231,
-    "pergunta": "Pergunta exemplo 231: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 231",
-      "B": "Alternativa B da questão 231",
-      "C": "Alternativa C da questão 231",
-      "D": "Alternativa D da questão 231"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 232,
-    "pergunta": "Pergunta exemplo 232: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 232",
-      "B": "Alternativa B da questão 232",
-      "C": "Alternativa C da questão 232",
-      "D": "Alternativa D da questão 232"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 233,
-    "pergunta": "Pergunta exemplo 233: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 233",
-      "B": "Alternativa B da questão 233",
-      "C": "Alternativa C da questão 233",
-      "D": "Alternativa D da questão 233"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 234,
-    "pergunta": "Pergunta exemplo 234: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 234",
-      "B": "Alternativa B da questão 234",
-      "C": "Alternativa C da questão 234",
-      "D": "Alternativa D da questão 234"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 235,
-    "pergunta": "Pergunta exemplo 235: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 235",
-      "B": "Alternativa B da questão 235",
-      "C": "Alternativa C da questão 235",
-      "D": "Alternativa D da questão 235"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 236,
-    "pergunta": "Pergunta exemplo 236: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 236",
-      "B": "Alternativa B da questão 236",
-      "C": "Alternativa C da questão 236",
-      "D": "Alternativa D da questão 236"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 237,
-    "pergunta": "Pergunta exemplo 237: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 237",
-      "B": "Alternativa B da questão 237",
-      "C": "Alternativa C da questão 237",
-      "D": "Alternativa D da questão 237"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 238,
-    "pergunta": "Pergunta exemplo 238: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 238",
-      "B": "Alternativa B da questão 238",
-      "C": "Alternativa C da questão 238",
-      "D": "Alternativa D da questão 238"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 239,
-    "pergunta": "Pergunta exemplo 239: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 239",
-      "B": "Alternativa B da questão 239",
-      "C": "Alternativa C da questão 239",
-      "D": "Alternativa D da questão 239"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 240,
-    "pergunta": "Pergunta exemplo 240: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 240",
-      "B": "Alternativa B da questão 240",
-      "C": "Alternativa C da questão 240",
-      "D": "Alternativa D da questão 240"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 241,
-    "pergunta": "Pergunta exemplo 241: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 241",
-      "B": "Alternativa B da questão 241",
-      "C": "Alternativa C da questão 241",
-      "D": "Alternativa D da questão 241"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 242,
-    "pergunta": "Pergunta exemplo 242: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 242",
-      "B": "Alternativa B da questão 242",
-      "C": "Alternativa C da questão 242",
-      "D": "Alternativa D da questão 242"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": 243,
-    "pergunta": "Pergunta exemplo 243: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 243",
-      "B": "Alternativa B da questão 243",
-      "C": "Alternativa C da questão 243",
-      "D": "Alternativa D da questão 243"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 244,
-    "pergunta": "Pergunta exemplo 244: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 244",
-      "B": "Alternativa B da questão 244",
-      "C": "Alternativa C da questão 244",
-      "D": "Alternativa D da questão 244"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 245,
-    "pergunta": "Pergunta exemplo 245: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 245",
-      "B": "Alternativa B da questão 245",
-      "C": "Alternativa C da questão 245",
-      "D": "Alternativa D da questão 245"
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": 246,
-    "pergunta": "Pergunta exemplo 246: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 246",
-      "B": "Alternativa B da questão 246",
-      "C": "Alternativa C da questão 246",
-      "D": "Alternativa D da questão 246"
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": 247,
-    "pergunta": "Pergunta exemplo 247: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 247",
-      "B": "Alternativa B da questão 247",
-      "C": "Alternativa C da questão 247",
-      "D": "Alternativa D da questão 247"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 248,
-    "pergunta": "Pergunta exemplo 248: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 248",
-      "B": "Alternativa B da questão 248",
-      "C": "Alternativa C da questão 248",
-      "D": "Alternativa D da questão 248"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 249,
-    "pergunta": "Pergunta exemplo 249: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 249",
-      "B": "Alternativa B da questão 249",
-      "C": "Alternativa C da questão 249",
-      "D": "Alternativa D da questão 249"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": 250,
-    "pergunta": "Pergunta exemplo 250: Qual das alternativas representa corretamente o conceito apresentado?",
-    "alternativas": {
-      "A": "Alternativa A da questão 250",
-      "B": "Alternativa B da questão 250",
-      "C": "Alternativa C da questão 250",
-      "D": "Alternativa D da questão 250"
-    },
-    "resposta_correta": "D"
-  }
-]
+      "id": 150,
+      "pergunta": "Como incluir ética no Design Thinking?",
+      "alternativas": {
+        "A": "Testar apenas com grupos privilegiados.",
+        "B": "Considerar impactos sociais em todas as etapas.",
+        "C": "Ignorar feedbacks negativos.",
+        "D": "Priorizar velocidade sobre reflexão."
+      },
+      "resposta_correta": "B"
+    }
+];
