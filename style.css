@@ -1,0 +1,141 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.quiz-container {
+    background-color: #ffffff;
+    padding: 35px 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    width: 95%;
+    max-width: 650px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+}
+
+#question {
+    font-size: 1.5em;
+    color: #34495e;
+    margin: 0 0 30px 0;
+    padding: 20px 25px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: inset 0 1px 5px rgba(0,0,0,0.05);
+    line-height: 1.4;
+}
+
+.answers-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza os botões */
+    /* Removemos o 'gap' aqui e usaremos 'margin' nos botões para maior controle */
+    margin-bottom: 25px;
+}
+
+.btn {
+    background-color: #4a90e2;
+    color: white;
+    padding: 18px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.15em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    /* Usamos flex-basis para definir a largura base e a margem para o espaçamento */
+    flex-basis: calc(50% - 20px); /* 50% da largura do container, menos 20px para margens */
+    margin: 10px; /* Adiciona 10px de margem em todos os lados (total de 20px entre botões) */
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover:not(.correct):not(.wrong):not(.disabled) {
+    background-color: #357ABD;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Cores de feedback */
+.btn.correct {
+    background-color: #2ecc71;
+    pointer-events: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn.wrong {
+    background-color: #e74c3c;
+    pointer-events: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+#next-btn, #restart-btn {
+    background-color: #7f8c8d;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.15em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 25px;
+    width: auto;
+    display: inline-block;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#next-btn:hover, #restart-btn:hover {
+    background-color: #95a5a6;
+    transform: translateY(-2px);
+}
+
+.hide {
+    display: none;
+}
+
+/* Responsividade: layout de uma coluna em telas menores */
+@media (max-width: 600px) {
+    .answers-container {
+        flex-direction: column; /* Empilha os botões verticalmente */
+        align-items: center; /* Centraliza os botões na coluna */
+    }
+    .btn {
+        flex-basis: 90%; /* Ocupa mais largura em telas pequenas */
+        margin: 10px 0; /* Espaçamento vertical e sem margem lateral */
+    }
+    .quiz-container {
+        padding: 25px 25px;
+    }
+    h1 {
+        font-size: 1.7em;
+        margin-bottom: 30px;
+    }
+    #question {
+        font-size: 1.3em;
+        padding: 15px 20px;
+    }
+    #next-btn, #restart-btn {
+        padding: 12px 25px;
+        font-size: 1em;
+        margin-top: 20px;
+    }
+}
