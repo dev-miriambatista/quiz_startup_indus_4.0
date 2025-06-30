@@ -3,10 +3,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 80vh;
     background: linear-gradient(135deg, #e0eafc, #cfdef3);
     margin: 0;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
 }
 
@@ -22,21 +22,21 @@ body {
 }
 
 h1 {
-    font-size: 2em;
-    color: #2c3e50;
-    margin-bottom: 40px;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+   font-size: 1em;
+  color: #2c3e50;
+  margin-bottom: 0.2em;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
 }
 
 #question {
-    font-size: 1.5em;
-    color: #34495e;
-    margin: 0 0 30px 0;
-    padding: 20px 25px;
-    background-color: #f8f9fa;
-    border-radius: 10px;
-    box-shadow: inset 0 1px 5px rgba(0,0,0,0.05);
-    line-height: 1.4;
+font-size: 1.2em;
+  color: #fff;
+  margin: 0 0 0.2em 0;
+  padding: 10px 15px;
+  background-color: #265584;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 5px rgba(0,0,0,0.05);
+  line-height: 1.4;
 }
 
 .answers-container {
@@ -44,22 +44,20 @@ h1 {
     flex-wrap: wrap;
     justify-content: center; /* Centraliza os botões */
     /* Removemos o 'gap' aqui e usaremos 'margin' nos botões para maior controle */
-    margin-bottom: 25px;
+    margin-bottom:0.2em;
 }
 
 .btn {
     background-color: #4a90e2;
     color: white;
     padding: 18px 25px;
-    border: none;
     border-radius: 10px;
     font-size: 1.15em;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
     /* Usamos flex-basis para definir a largura base e a margem para o espaçamento */
     flex-basis: calc(50% - 20px); /* 50% da largura do container, menos 20px para margens */
-    margin: 10px; /* Adiciona 10px de margem em todos os lados (total de 20px entre botões) */
-    box-sizing: border-box;
+    margin: 0.2em; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -92,12 +90,11 @@ h1 {
     background-color: #7f8c8d;
     color: white;
     padding: 15px 30px;
-    border: none;
     border-radius: 10px;
     font-size: 1.15em;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    margin-top: 25px;
+    margin-top: 0.2em;
     width: auto;
     display: inline-block;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -120,14 +117,14 @@ h1 {
     }
     .btn {
         flex-basis: 90%; /* Ocupa mais largura em telas pequenas */
-        margin: 10px 0; /* Espaçamento vertical e sem margem lateral */
+        margin: 0.2em 0; /* Espaçamento vertical e sem margem lateral */
     }
     .quiz-container {
         padding: 25px 25px;
     }
     h1 {
         font-size: 1.7em;
-        margin-bottom: 30px;
+        margin-bottom: 0.2em;
     }
     #question {
         font-size: 1.3em;
@@ -136,6 +133,6 @@ h1 {
     #next-btn, #restart-btn {
         padding: 12px 25px;
         font-size: 1em;
-        margin-top: 20px;
+        margin-top: 0.2em;
     }
 }

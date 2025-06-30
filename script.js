@@ -23,9 +23,9 @@ function startQuiz() {
     score = 0;
     wrongQuestions = []; // Zera as perguntas erradas ao iniciar um novo quiz
 
-    // Começa com todas as perguntas originais
-    questionsToAsk = [...questions]; // 'questions' é o array do seu question.js
-    shuffleArray(questionsToAsk); // Embaralha as perguntas para uma ordem aleatória a cada início de quiz
+    // --- MODIFICAÇÃO AQUI: Lógica para balancear as respostas corretas ---
+    questionsToAsk = balanceAndShuffleQuestions(questions); // Usa a nova função para balancear
+    // --- FIM DA MODIFICAÇÃO ---
     
     nextButton.classList.add('hide');
     restartButton.classList.add('hide');
@@ -63,7 +63,7 @@ function loadQuestion() {
         });
     } else {
         if (wrongQuestions.length > 0 && questionsToAsk.length === questions.length) { 
-            questionsToAsk = [...wrongQuestions];
+            questionsToAsk = balanceAndShuffleQuestions(wrongQuestions); // Balanceia e embaralha as erradas também
             wrongQuestions = [];
             currentQuestionIndex = 0;
             
@@ -132,10 +132,52 @@ function showResult() {
 }
 
 // --- Funções Auxiliares ---
+
+// Função para balancear e embaralhar as perguntas
+function balanceAndShuffleQuestions(allQuestions) {
+    // Agrupa as perguntas por resposta correta
+    const categorizedQuestions = { A: [], B: [], C: [], D: [] };
+    allQuestions.forEach(q => {
+        if (categorizedQuestions[q.resposta_correta]) {
+            categorizedQuestions[q.resposta_correta].push(q);
+        }
+    });
+
+    // Embaralha cada categoria individualmente para manter a aleatoriedade interna
+    Object.keys(categorizedQuestions).forEach(key => {
+        shuffleArray(categorizedQuestions[key]);
+    });
+
+    const balancedList = [];
+    let currentIndex = { A: 0, B: 0, C: 0, D: 0 };
+    let totalAdded = 0;
+    const totalQuestions = allQuestions.length;
+
+    // Loop para adicionar perguntas de cada categoria de forma intercalada
+    while (totalAdded < totalQuestions) {
+        // Itera pelas categorias (A, B, C, D) para tentar adicionar uma de cada vez
+        for (const key of ['A', 'B', 'C', 'D']) {
+            if (currentIndex[key] < categorizedQuestions[key].length) {
+                balancedList.push(categorizedQuestions[key][currentIndex[key]]);
+                currentIndex[key]++;
+                totalAdded++;
+                if (totalAdded === totalQuestions) break; // Sai do loop se todas as perguntas foram adicionadas
+            }
+        }
+    }
+    
+    // Um embaralhamento final para adicionar mais aleatoriedade sem destruir o balanceamento grosseiro
+    // que já foi feito. Isso evita que A-B-C-D seja um padrão muito óbvio.
+    shuffleArray(balancedList); 
+    
+    return balancedList;
+}
+
+// Função para embaralhar um array usando o algoritmo Fisher-Yates shuffle
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
+        [array[i], array[j]] = [array[j], array[i]]; // Troca elementos de posição
     }
     return array;
 }
@@ -146,6 +188,7 @@ nextButton.addEventListener('click', () => {
     loadQuestion();
 });
 
-restartButton.addEventListener('click', startQuiz);
+restartButton.addEventListener('click', startQuiz); // Reinicia o quiz chamando startQuiz
 
+// Iniciar o quiz quando o DOM estiver completamente carregado
 document.addEventListener('DOMContentLoaded', startQuiz);
